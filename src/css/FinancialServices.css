@@ -1,0 +1,45 @@
+.financial-section {
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .services-title {
+    color: #009f9b;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .services-heading {
+    color: #3a3a3a;
+    font-weight: bold;
+  }
+  
+  .services-subtext {
+    color: #6c757d;
+    margin-bottom: 30px;
+  }
+  
+  .services-subheading {
+    color: #009f9b;
+    font-weight: bold;
+  }
+  
+  .services-description {
+    color: #5e5e5e;
+    line-height: 1.6;
+  }
+  
+  .get-started-button {
+    background-color: #009f9b;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .get-started-button:hover {
+    background-color: #007a75;
+  }
+  

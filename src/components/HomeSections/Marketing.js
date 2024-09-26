@@ -42,7 +42,7 @@ const Marketing = () => {
                                     <Card.Text>
                                         It’s not just posting and creating content that explains your brand, rather it majorly includes delivering that content to the right audience to convert them into your clientele.
                                     </Card.Text>
-                                    <a href="#" className="btn btn-link">Learn more</a>
+                                    <a href="Digital-Marketing-Services" className="btn btn-link">Learn more</a>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -72,7 +72,7 @@ const Marketing = () => {
                                     <Card.Text>
                                         It’s not just posting and creating content that explains your brand, rather it majorly includes delivering that content to the right audience to convert them into your clientele.
                                     </Card.Text>
-                                    <a href="#" className="btn btn-link">Learn more</a>
+                                    <a href="Financial-Services" className="btn btn-link">Learn more</a>
                                 </Card.Body>
                             </Card>
                         </Col>

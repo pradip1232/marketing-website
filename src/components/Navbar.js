@@ -18,7 +18,7 @@ function Navigation() {
 
   const [scrolled, setScrolled] = useState(false);
 
-  const pagesWithBackground = ["/about", "/services", "/programs", "/clients", "/contact", "/Offline-Marketing-Services"];
+  const pagesWithBackground = ["/about", "/services", "/programs", "/clients", "/contact", "/Offline-Marketing-Services", "/Digital-Marketing-Services", "/Financial-Services"];
 
   useEffect(() => {
     const handleScroll = () => {

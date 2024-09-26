@@ -13,11 +13,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer";
 import OfflineMarketingServices from "./pages/OfflineMarketingServices";
 import Marketing from "./components/HomeSections/Marketing";
+import DigitalMarketingServices from "./pages/DigitalMarketingServices";
+import FinancialServices from "./pages/FinancialServices";
+import HelpOffcanvas from "./components/HelpOffcanvas";
+import HelpModal from "./components/HelpModal";
 
 function App() {
   return (
     <Router>
       <Navigation />
+      {/* <HelpOffcanvas /> */}
+      <HelpModal />
       <Routes>
 
         <Route path="/" element={<Home />} />
@@ -27,6 +33,8 @@ function App() {
         <Route path="/clients" element={<Clients />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Offline-Marketing-Services" element={<OfflineMarketingServices />} />
+        <Route path="/Digital-Marketing-Services" element={<DigitalMarketingServices />} />
+        <Route path="/Financial-Services" element={<FinancialServices />} />
       </Routes>
       <Footer />
     </Router>
