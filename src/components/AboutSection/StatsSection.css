@@ -1,0 +1,126 @@
+/* src/ExpertiseSection.css */
+.expertise-section {
+    padding: 10px 0;
+    /* Set the background image, size, and position */
+    background-image: url('../../img/Rectangle\ 25.png'); /* Replace with your actual image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Ensures text is visible on the background */
+}
+
+.quote-section {
+    margin-bottom: 30px;
+}
+
+.quote {
+    font-weight: bold;
+    color: #000000;
+    border-color: red;
+    border: #0e7373;
+    margin-bottom: 10px;
+}
+
+.quote-author {
+    font-style: italic;
+}
+
+.stats-row {
+    /* background: linear-gradient(to right, #000000, #0e7373); */
+    background: linear-gradient(90deg, #000000 0%, #00758B 100%);
+
+    padding: 20px 0;
+}
+
+.stat-box {
+    text-align: center;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.stat-number {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* src/components/LookingForSection.css */
+
+.looking-for-section {
+    background-color: #fff;
+    padding: 50px 0;
+    position: relative;
+}
+
+.text-section .section-title {
+    background-color: #007d7d;
+    /* Update to your desired color */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contact-box {
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.contact-box p {
+    display: inline;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.arrow-image {
+    position: absolute;
+    right: -50px;
+    /* Adjust the position based on your design */
+    top: -30px;
+    width: 50px;
+    height: auto;
+    animation: arrow-bounce 2s infinite;
+    /* Adds a bounce animation */
+}
+
+/* Animation for arrow bounce */
+@keyframes arrow-bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}

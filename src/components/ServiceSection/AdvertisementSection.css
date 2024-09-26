@@ -1,0 +1,71 @@
+.advertisement-section {
+    background-color: #f8f9fa;
+    padding: 50px 50px;
+    position: relative;
+}
+
+.advertisement-card {
+    border: 1px solid #ddd;
+    padding: 5px;
+    /* margin: 15px; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+    height: 143px;
+    width: 291px;
+}
+
+.central-card {
+    margin: 40px auto;
+}
+
+.top-side {
+    margin-top: -3rem;
+}
+
+.central {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.arrow {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.arrow-up {
+    top: -244%;
+    left: 63%;
+    transform: rotate(-13deg);
+    /* transform: translate(-50%, -50%); */
+}
+
+.arrow-down {
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.arrow-right {
+    top: 50%;
+    right: 10%;
+    transform: translate(50%, -50%);
+}
+
+.arrow-left {
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow-right-up {
+    top: 10%;
+    right: 15%;
+}
+
+.arrow-left-down {
+    bottom: 10%;
+    left: 15%;
+}

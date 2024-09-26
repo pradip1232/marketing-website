@@ -1,0 +1,35 @@
+/* src/ExpertiseSection.css */
+.expertise-section {
+    padding: 10px 0;
+    /* background: linear-gradient(135deg, #0061C0, #00C0C6); */
+    background-image: url('../../img/Rectangle\ 25.png')!important;
+    color: white;
+}
+
+
+.left-side-cards{
+    margin-top: 12rem!important;
+}
+
+.expertise-card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.expertise-card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.expertise-card .card-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.expertise-card button {
+    font-size: 14px;
+    color: #007bff;
+    padding: 0;
+}

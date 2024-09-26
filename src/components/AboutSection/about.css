@@ -1,0 +1,11 @@
+.nav {
+    background-color: aqua;
+    height: 85px;
+}
+
+.navbar-custom {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    /* background: red!important; */
+}
+
