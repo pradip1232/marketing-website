@@ -1,38 +1,29 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import img from '../../img/9 2.png'; // Ensure this path is correct for your image
 import './about.css';
+
 const AboutUsSection = () => {
   return (
-    <Container fluid className="py-5 position-absulate">
-      <Row className="align-items-center">
-        {/* Left Column: Text Content */}
-        <Col md={6} className="text-md-left text-center">
-          <h2>Digital Marketing</h2>
-          <p>
-            Experience the best-in-industry services by our team of experts catering to multiple clients across different industries.
-          </p>
-        </Col>
+    <section className='about-section-deigital'>
 
-        {/* Right Column: Image */}
-        <Col md={6}>
-          <img
-            src="https://example.com/your-image-url" // Replace with your actual image path
-            alt="Digital Marketing Illustration"
-            className="img-fluid"
-          />
-        </Col>
-      </Row>
-
-      {/* Optional Contact Button */}
-      <Row className="mt-4">
-        <Col className="text-center">
-          <Button variant="outline-dark" className="rounded-pill">
-            Contact Us
-          </Button>
-        </Col>
-      </Row>
-    </Container>
+      <div className="about-section">
+        <Container fluid className="py-5 position-relative d-flex justify-content-start align-items-left text-left">
+          <Row className="align-items-start w-100">
+            <Col md={8} className="text-left etxt-colomn text-black">
+              <h2>Digital Marketing</h2>
+              <p className="lead">
+                Experience the best-in-industry services by our team of experts catering to multiple clients across different industries.
+              </p>
+              <Button variant="outline-light" className="rounded-pill mt-3">
+                Contact Us
+              </Button>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </section>
   );
 };
 

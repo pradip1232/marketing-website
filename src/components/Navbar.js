@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css'; // Import skeleton CSS
 import "./Navbar.css";
 import logo from '../images/logo.png';
 import Slogo from '../img/squib logo.webp';
 
 function Navigation() {
   const location = useLocation();
-
+  
+  const [loading, setLoading] = useState(true); // Loading state
+  const [scrolled, setScrolled] = useState(false);
+  
   useEffect(() => {
     const path = location.pathname.split('/').filter(Boolean).pop();
     const pageTitle = path
@@ -15,10 +20,6 @@ function Navigation() {
       : 'Squib Factory | Home';
     document.title = pageTitle;
   }, [location]);
-
-  const [scrolled, setScrolled] = useState(false);
-
-  const pagesWithBackground = ["/about", "/services", "/programs", "/clients", "/contact", "/Offline-Marketing-Services", "/Digital-Marketing-Services", "/Financial-Services"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,12 +37,20 @@ function Navigation() {
     };
   }, []);
 
-  // Check if the current page is in the list of pagesWithBackground
-  const isPageWithBackground = pagesWithBackground.includes(location.pathname);
+  const pagesWithBackground = [
+    "/about", "/services", "/programs", "/clients", "/contact", 
+    "/Offline-Marketing-Services", "/Digital-Marketing-Services", "/Financial-Services"
+  ];
 
-  // Combine scrolled or isPageWithBackground to determine which logo to show
+  const isPageWithBackground = pagesWithBackground.includes(location.pathname);
   const showSlogo = scrolled || isPageWithBackground;
   const showLogo = !showSlogo;
+
+  // Simulate a loading effect for 2 seconds before rendering the navbar
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <Navbar
@@ -51,18 +60,38 @@ function Navigation() {
     >
       <Container fluid className="navbar-custom-container2">
         <Navbar.Brand as={Link} to="/">
-          {showLogo && <img className="logo" src={logo} alt="Logo" width={402} height={104} />}
-          {showSlogo && <img className="slogo" src={Slogo} alt="Slogo" width={200} />}
+          {/* Display skeleton or logos based on loading state */}
+          {loading ? (
+            <Skeleton width={200} height={50} /> // Skeleton for the logo
+          ) : (
+            <>
+              {showLogo && <img className="logo" src={logo} alt="Logo" width={402} height={104} />}
+              {showSlogo && <img className="slogo" src={Slogo} alt="Slogo" width={200} />}
+            </>
+          )}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/about">About Us</Nav.Link>
-            <Nav.Link as={Link} to="/services">Services</Nav.Link>
-            <Nav.Link as={Link} to="/programs">Programs</Nav.Link>
-            <Nav.Link as={Link} to="/clients">Clients</Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="contact-border">Contact Us</Nav.Link>
+            {/* Display skeletons for nav links if loading */}
+            {loading ? (
+              <>
+                <Skeleton width={70} height={20} style={{ marginRight: 20 }} />
+                <Skeleton width={70} height={20} style={{ marginRight: 20 }} />
+                <Skeleton width={70} height={20} style={{ marginRight: 20 }} />
+                <Skeleton width={70} height={20} style={{ marginRight: 20 }} />
+                <Skeleton width={70} height={20} />
+              </>
+            ) : (
+              <>
+                <Nav.Link as={Link} to="/">Home</Nav.Link>
+                <Nav.Link as={Link} to="/about">About Us</Nav.Link>
+                <Nav.Link as={Link} to="/services">Services</Nav.Link>
+                <Nav.Link as={Link} to="/programs">Programs</Nav.Link>
+                <Nav.Link as={Link} to="/clients">Clients</Nav.Link>
+                <Nav.Link as={Link} to="/contact" className="contact-border">Contact Us</Nav.Link>
+              </>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>
