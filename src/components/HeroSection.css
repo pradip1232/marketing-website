@@ -196,6 +196,14 @@
 
 
 
+
+
+
+
+
+
+
+
 .text-heading-servics p {
   font-family: 'Poppins', 'Arial', sans-serif;
   font-size: 18px;
@@ -205,6 +213,36 @@
   text-align: left;
 
 }
+
+.carousel-indicators [data-bs-target] {
+  background-color: rgb(146, 90, 90);
+  /* Light gray background */
+  border-radius: 50%;
+  /* Make them circular */
+  width: 10px;
+  /* Set width */
+  height: 10px;
+  /* Set height */
+  margin: 0 3px;
+  /* Spacing between indicators */
+}
+
+.carousel-indicators [data-bs-target] {
+  color: aqua !important;
+}
+
+.carousel-indicators .active {
+  background-color: #e7ecf1;
+  /* Change the active indicator color if needed */
+}
+
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: visible !important;
+}
+
 
 .text-heading-servics h3 {
   font-family: 'Poppins', 'Arial', sans-serif;
@@ -325,6 +363,13 @@ a {
 .card:hover {
   transform: translateY(-10px);
 }
+
+
+
+
+
+
+
 
 
 

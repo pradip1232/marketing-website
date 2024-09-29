@@ -151,7 +151,7 @@ const Contact = () => {
                 </Grid>
               </Grid>
             </form>
-          
+
           </Col>
           <Col md={6} className="text-center">
             <Box
@@ -161,9 +161,9 @@ const Contact = () => {
                 border: '1px solid #00000040',
                 width: '392px',
                 height: '568px',
-                borderRadius: '13px', 
-                display: 'flex', 
-                justifyContent: 'center', 
+                borderRadius: '13px',
+                display: 'flex',
+                justifyContent: 'center',
                 alignItems: 'center',
                 opacity: 1,
                 margin: '0 auto' // Center the Box
@@ -176,10 +176,10 @@ const Contact = () => {
                 style={{
                   marginTop: '-53px',
                   maxWidth: '100%',
-                  height: 'auto', 
+                  height: 'auto',
                   width: '438px',
-                  height: '619px', 
-                  opacity: 1 
+                  height: '619px',
+                  opacity: 1
 
                 }}
               />

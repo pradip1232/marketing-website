@@ -1,5 +1,5 @@
-import React from 'react'
-import { Card, Button, Row, Col, Container, Image } from 'react-bootstrap';
+import React from 'react';
+import { Card, Button, Row, Col, Container, Carousel } from 'react-bootstrap';
 import { AccountBalance, TrendingUp, Group } from '@mui/icons-material'; // MUI Icons
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -31,52 +31,101 @@ const Marketing = () => {
 
                         </Col>
                     </Row>
-                    {/* Diagonal Cards Layout */}
-                    <Row className="diagonal-layout">
-                        {/* Card 1 - Lower position */}
-                        <Col md={4} className="mb-4 card-1">
-                            <Card className="h-100 custom-card-marketing">
-                                <Card.Img src={com} height={200} width={133} className='cards-img-mmarketing' />
-                                <Card.Body>
-                                    <Card.Title><i className="bi bi-laptop"></i> Digital Marketing Services</Card.Title>
-                                    <Card.Text>
-                                        It’s not just posting and creating content that explains your brand, rather it majorly includes delivering that content to the right audience to convert them into your clientele.
-                                    </Card.Text>
-                                    <a href="Digital-Marketing-Services" className="btn btn-link">Learn more</a>
-                                </Card.Body>
-                            </Card>
-                        </Col>
+                    {/* Diagonal Cards Carousel */}
+                    <Carousel>
+                        <Carousel.Item style={{overflow:'visible'}}>
+                            <Row className="diagonal-layout " style={{overflow:'visible'}}>
+                                {/* Card 1 */}
+                                <Col md={4} className="mb-4 card-1">
+                                    <Card className="h-100 custom-card-marketing">
+                                        <Card.Img src={com} height={200} className='cards-img-mmarketing' />
+                                        <Card.Body>
+                                            <Card.Title><i className="bi bi-laptop"></i> Digital Marketing Services</Card.Title>
+                                            <Card.Text>
+                                                It’s not just posting and creating content that explains your brand, rather it majorly includes delivering that content to the right audience to convert them into your clientele.
+                                            </Card.Text>
+                                            <a href="Digital-Marketing-Services" className="btn btn-link">Learn more</a>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
 
-                        {/* Card 2 - Center position */}
-                        <Col md={4} className="mb-4 card-2">
-                            <Card className="h-100 custom-card-marketing">
-                                <Card.Body>
-                                    <Card.Img src={com2} height={200} width={133} height={115} className='cards-img-mmarketing' />
+                                {/* Card 2 */}
+                                <Col md={4} className="mb-4 card-2">
+                                    <Card className="h-100 custom-card-marketing">
+                                        <Card.Img src={com2} height={200} className='cards-img-mmarketing' />
+                                        <Card.Body>
+                                            <Card.Title><i className="bi bi-clipboard"></i> Offline Marketing Services</Card.Title>
+                                            <Card.Text>
+                                                It’s not just posting and creating content that explains your brand, rather it majorly includes delivering that content to the right audience to convert them into your clientele.
+                                            </Card.Text>
+                                            <a href="Offline-Marketing-Services" className="btn btn-link">Learn more</a>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
 
-                                    <Card.Title><i className="bi bi-clipboard"></i> Offline Marketing Services</Card.Title>
-                                    <Card.Text>
-                                        It’s not just posting and creating content that explains your brand, rather it majorly includes delivering that content to the right audience to convert them into your clientele.
-                                    </Card.Text>
-                                    <a href="Offline-Marketing-Services" className="btn btn-link">Learn more</a>
-                                </Card.Body>
-                            </Card>
-                        </Col>
+                                {/* Card 3 */}
+                                <Col md={4} className="mb-4 card-3">
+                                    <Card className="h-100 custom-card-marketing">
+                                        <Card.Img src={com3} height={200} className='cards-img-mmarketing' />
+                                        <Card.Body>
+                                            <Card.Title><i className="bi bi-currency-dollar"></i> Financial Services</Card.Title>
+                                            <Card.Text>
+                                                It’s not just posting and creating content that explains your brand, rather it majorly includes delivering that content to the right audience to convert them into your clientele.
+                                            </Card.Text>
+                                            <a href="Financial-Services" className="btn btn-link">Learn more</a>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                            </Row>
+                        </Carousel.Item>
 
-                        {/* Card 3 - Center position */}
-                        <Col md={4} className="mb-4 card-3">
-                            <Card className="h-100 custom-card-marketing">
-                                <Card.Body>
-                                    <Card.Img src={com3} height={200} width={133} height={115} className='cards-img-mmarketing' />
+                        {/* Second Slide */}
+                        <Carousel.Item>
+                            <Row className="diagonal-layout">
+                                {/* Card 4 */}
+                                <Col md={4} className="mb-4 card-1">
+                                    <Card className="h-100 custom-card-marketing">
+                                        <Card.Img src={com} height={200} className='cards-img-mmarketing' />
+                                        <Card.Body>
+                                            <Card.Title><i className="bi bi-laptop"></i> SEO Services</Card.Title>
+                                            <Card.Text>
+                                                Enhance your online visibility and attract more customers with our tailored SEO strategies.
+                                            </Card.Text>
+                                            <a href="SEO-Services" className="btn btn-link">Learn more</a>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
 
-                                    <Card.Title><i className="bi bi-currency-dollar"></i> Financial Services</Card.Title>
-                                    <Card.Text>
-                                        It’s not just posting and creating content that explains your brand, rather it majorly includes delivering that content to the right audience to convert them into your clientele.
-                                    </Card.Text>
-                                    <a href="Financial-Services" className="btn btn-link">Learn more</a>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    </Row>
+                                {/* Card 5 */}
+                                <Col md={4} className="mb-4 card-2">
+                                    <Card className="h-100 custom-card-marketing">
+                                        <Card.Img src={com2} height={200} className='cards-img-mmarketing' />
+                                        <Card.Body>
+                                            <Card.Title><i className="bi bi-clipboard"></i> Content Creation</Card.Title>
+                                            <Card.Text>
+                                                Engage your audience with high-quality, engaging content crafted by our expert writers.
+                                            </Card.Text>
+                                            <a href="Content-Creation" className="btn btn-link">Learn more</a>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+
+                                {/* Card 6 */}
+                                <Col md={4} className="mb-4 card-3">
+                                    <Card className="h-100 custom-card-marketing">
+                                        <Card.Img src={com} height={200} className='cards-img-mmarketing' />
+                                        <Card.Body>
+                                            <Card.Title><i className="bi bi-currency-dollar"></i> PPC Management</Card.Title>
+                                            <Card.Text>
+                                                Maximize your ROI with our effective pay-per-click advertising strategies.
+                                            </Card.Text>
+                                            <a href="PPC-Management" className="btn btn-link">Learn more</a>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                            </Row>
+                        </Carousel.Item>
+                    </Carousel>
                 </Container>
             </section>
 
