@@ -1,11 +1,11 @@
 // src/components/StatsSection.js
 import React, { useState } from 'react';
-import { Container, Row, Col,Button } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Box, Typography } from '@mui/material';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import './StatsSection.css'; // Make sure to create and style this CSS file
-import arrow from '../../img/11 1.png';
+import LookingWithContactBtn from '../HomeSections/LookingWithContactBtn';
 
 const StatsSection = () => {
     const { ref, inView } = useInView({
@@ -16,10 +16,10 @@ const StatsSection = () => {
     return (
         <Container fluid className="stats-section1" ref={ref}>
             {/* Quote Section */}
-            <div className="stats-section">
+            <div className="stats-section text-center justify-content-center" height={351}>
 
-                <Row className="quote-section">
-                    <Col className='text-colors'>
+                <Row className="quote-section text-center justify-content-center">
+                    <Col md={6} className='text-colors border-dark'>
                         <Typography variant="h4" className="quote">
                             "YOU CAN'T SELL, IF YOU CAN'T TELL"
                         </Typography>
@@ -40,13 +40,13 @@ const StatsSection = () => {
                 </Col>
                 <Col md={3} className="stat-box">
                     <Box>
-                        {inView && <CountUp end={25} duration={2} suffix=" Million+" className="stat-number" />}
+                        {inView && <CountUp end={25} duration={2} suffix="" className="stat-number" />}
                         <Typography variant="h6">Million+ Engagements</Typography>
                     </Box>
                 </Col>
                 <Col md={3} className="stat-box">
                     <Box>
-                        {inView && <CountUp end={300} duration={2} suffix=" Million+" className="stat-number" />}
+                        {inView && <CountUp end={300} duration={2} suffix="" className="stat-number" />}
                         <Typography variant="h6">Million+ Audience Reached</Typography>
                     </Box>
                 </Col>
@@ -57,23 +57,8 @@ const StatsSection = () => {
                     </Box>
                 </Col>
             </Row>
+            <LookingWithContactBtn />
 
-            <div className="looking-for-section" >
-                <Row className="align-items-center justify-content-center text-center">
-                    <Col md={8} className="text-section">
-                        <h3 className="section-title">Looking For Expert Marketing Services</h3>
-                    </Col>
-                </Row>
-                <Row className="align-items-center justify-content-center text-center">
-                    <Col md={8}>
-                        <div className="contact-box">
-                            <p>Connect with us right away</p>
-                            <Button variant="outline-info" className="contact-button">Contact Us</Button>
-                            <img src={arrow} alt="Arrow" className="arrow-image" />
-                        </div>
-                    </Col>
-                </Row>
-            </div>
         </Container>
     );
 };

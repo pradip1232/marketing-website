@@ -1,7 +1,74 @@
+.why-choose-us {
+    padding: 50px 50px;
+}
+
+.why-choose-us h2 {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #00758B;
+}
+
+.why-choose-us p {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 37.5px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: black;
+}
+
+
+.section-text {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 37.5px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #000000;
+}
+
+
+
+
+
+.advertisement-section .chosse-heading {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: black;
+}
+
 .advertisement-section {
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
     padding: 50px 50px;
     position: relative;
+}
+
+.add-center-btn .card-title {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+}
+
+.add-center-btn {
+    background: linear-gradient(90deg, #000000 0%, #00758B 100%);
+    color: white;
+    height: 69px;
+    width: 326px;
+
 }
 
 .advertisement-card {
@@ -9,6 +76,27 @@
     padding: 5px;
     /* margin: 15px; */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.advertisement-grid .card-text {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: black;
+}
+
+.advertisement-grid .card-title {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #00758B;
 }
 
 .arrow {
@@ -24,9 +112,14 @@
     margin-top: -3rem;
 }
 
+
+.center-btn {
+    padding: 5px !important;
+}
+
 .central {
-    background-color: #17a2b8;
-    color: white;
+    /* background-color: #17a2b8;
+    color: white; */
 }
 
 .arrow {

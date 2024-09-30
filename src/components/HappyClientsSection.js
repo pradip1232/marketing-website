@@ -5,7 +5,7 @@ import './HappyClientsSection.css'; // Optional for custom styles
 const HappyClientsSection = () => {
     return (
         <section className="happy-clients-section">
-            <Container fluid className="text-center">
+            <Container fluid className="text-center hppy-clint-cont">
                 {/* Section Heading */}
                 <h1 className="happy-heading">HAPPY CLIENTS</h1>
                 <h4 className="happy-subheading">Our Happy Clients</h4>

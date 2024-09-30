@@ -32,7 +32,7 @@ const ExpertiseSection = () => {
                 <Row className="justify-content-center">
                     {/* Left Container */}
                     <Col md={6} className="left-side-cards">
-                        <Typography variant="h4" sx={{ color: "white", textAlign: "center", marginBottom: "40px" }}>
+                        <Typography variant="h4" sx={{ color: "white", textAlign: "center", marginBottom: "40px", fontSize:"40px" , fontWeight:'700' }}>
                             Area Of Expertise
                         </Typography>
                         <Row>

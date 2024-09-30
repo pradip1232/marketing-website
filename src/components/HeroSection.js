@@ -57,7 +57,7 @@ const HeroSection = () => {
               ) : (
                 <>
                   <img className="man-image" src={man} alt="man" />
-                  <button className="btn contact-btn">Let’s Connect</button>
+                  <button className=" contact-btn">Let’s Connect</button>
                 </>
               )}
             </div>
@@ -71,18 +71,18 @@ const HeroSection = () => {
         <div className="about-us-section">
           <Container className="position-relative p-0">
             <Row className="row">
-              <Col md={6} className="p-0">
+              <Col md={7} className="p-0">
                 <div className="girl-image-wrapper">
                   <img src={girls} alt="Girl" className="girl-image" />
                 </div>
               </Col>
-              <Col md={6} className="d-flex p-0 flex-column right-side-about-heading justify-content-center align-items-start text-section">
+              <Col md={5} className="d-flex p-0 flex-column right-side-about-heading justify-content-center align-items-start text-section">
                 <div className="content-wrapper">
                   <h3>About Us</h3>
                   <h4>A Visionary aim to deliver ease-of-doing-business for all !!</h4>
                   <p>The company was established with a view to support businesses to expand and help them grow exponentially.</p>
-                  <p>We provide services related to different industries and have a team of experienced members from various backgrounds.</p>
-                  <Button variant="outline-primary">Get Started Now</Button>
+                  <p className="mt-5 pt-4">We provide services related to different industries and have a team of experienced members from various backgrounds.</p>
+                  <Button className="outline-primary-white2" >Get Started Now</Button>
                 </div>
               </Col>
             </Row>

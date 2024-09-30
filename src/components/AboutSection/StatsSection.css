@@ -2,11 +2,16 @@
 .expertise-section {
     padding: 10px 0;
     /* Set the background image, size, and position */
-    background-image: url('../../img/Rectangle\ 25.png'); /* Replace with your actual image path */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: white; /* Ensures text is visible on the background */
+    background-image: url('../../img/Rectangle\ 25.png');
+    /* Replace with your actual image path */
+    background-size: cover;
+    /* Ensures the image covers the entire section */
+    background-position: center;
+    /* Centers the background image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    color: white;
+    /* Ensures text is visible on the background */
 }
 
 .quote-section {
@@ -14,16 +19,48 @@
 }
 
 .quote {
-    font-weight: bold;
+    font-family: Poppins;
+    font-size: 32px !important;
+    font-weight: 600 !important;
+    line-height: 48px !important;
+    letter-spacing: 0.02em !important;
+    text-align: center;
+
+    /* font-weight: bold; */
     color: #000000;
-    border-color: red;
+    /* border-color: red; */
     border: #0e7373;
     margin-bottom: 10px;
 }
 
 .quote-author {
-    font-style: italic;
+    font-family: Poppins;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: right !important;
+    color: #00758B;
+
+    /* font-style: it/alic; */
 }
+
+
+.stats-section {
+    background-image: url('../../img/jj\ 1.png');
+    /* Fixed the path by removing the backslash */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    /* Add some padding for spacing */
+}
+
+.border-dark {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: white;
+}
+
 
 .stats-row {
     /* background: linear-gradient(to right, #000000, #0e7373); */
@@ -39,8 +76,15 @@
 }
 
 .stat-number {
-    font-size: 40px;
-    font-weight: bold;
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 96px;
+    letter-spacing: 0.02em;
+    text-align: left !important;
+
+    /* font-size: 40px;
+    font-weight: bold; */
 }
 
 
@@ -65,6 +109,16 @@
 
 /* src/components/LookingForSection.css */
 
+.looking-for-section p {
+    font-family: Poppins;
+    font-size: 25px !important;
+    font-weight: 400 !important;
+    line-height: 37.5px;
+    letter-spacing: 0.02em;
+    /* text-align: left; */
+
+}
+
 .looking-for-section {
     background-color: #fff;
     padding: 50px 0;
@@ -72,18 +126,32 @@
 }
 
 .text-section .section-title {
-    background-color: #007d7d;
+    background: #00758B;
+    text-transform: uppercase;
+    /* background-color: #007d7d; */
+    font-family: Poppins;
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
     /* Update to your desired color */
     color: #fff;
-    padding: 15px 30px;
+    padding: 5px 3px;
     border-radius: 50px;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
 .contact-box {
-    margin-top: 20px;
-    display: inline-block;
+    margin-top: 40px;
+    margin-left: 335px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
     position: relative;
 }
 
@@ -96,17 +164,24 @@
 }
 
 .contact-button {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 500 !important;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    border: 1px solid #000000 !important;
     display: inline-block;
     margin-left: 10px;
     font-weight: 500;
+    color: #00758B;
 }
 
 .arrow-image {
     position: absolute;
-    right: -50px;
-    /* Adjust the position based on your design */
-    top: -30px;
-    width: 50px;
+    right: 6px;
+    top: -84px;
+    width: 174px;
     height: auto;
     animation: arrow-bounce 2s infinite;
     /* Adds a bounce animation */

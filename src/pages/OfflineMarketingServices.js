@@ -2,6 +2,8 @@ import React from 'react'
 import Navigation from '../components/Navbar';
 import OfflineMarketing from '../components/ServiceSection/OfflineMarketing';
 import AdvertisementSection from '../components/ServiceSection/AdvertisementSection';
+import LookingWithContactBtn from '../components/HomeSections/LookingWithContactBtn';
+import ExpertiseSection from '../components/AboutSection/ExpertiseSection';
 // import { useEffect } from 'react';
 // import { useLocation } from 'react-router-dom';
 
@@ -25,6 +27,10 @@ const OfflineMarketingServices = () => {
             <OfflineMarketing />
 
             <AdvertisementSection />
+
+            <LookingWithContactBtn />
+
+            <ExpertiseSection />
         </div>
     )
 }

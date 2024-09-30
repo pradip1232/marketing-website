@@ -40,7 +40,7 @@ const Marketing = () => {
                                     <Card className="h-100 custom-card-marketing">
                                         <Card.Img src={com} height={200} className='cards-img-mmarketing' />
                                         <Card.Body>
-                                            <Card.Title><i className="bi bi-laptop"></i> Digital Marketing Services</Card.Title>
+                                            <Card.Title> Digital Marketing Services</Card.Title>
                                             <Card.Text>
                                                 It’s not just posting and creating content that explains your brand, rather it majorly includes delivering that content to the right audience to convert them into your clientele.
                                             </Card.Text>
@@ -54,7 +54,7 @@ const Marketing = () => {
                                     <Card className="h-100 custom-card-marketing">
                                         <Card.Img src={com2} height={200} className='cards-img-mmarketing' />
                                         <Card.Body>
-                                            <Card.Title><i className="bi bi-clipboard"></i> Offline Marketing Services</Card.Title>
+                                            <Card.Title> Offline Marketing Services</Card.Title>
                                             <Card.Text>
                                                 It’s not just posting and creating content that explains your brand, rather it majorly includes delivering that content to the right audience to convert them into your clientele.
                                             </Card.Text>
@@ -68,7 +68,7 @@ const Marketing = () => {
                                     <Card className="h-100 custom-card-marketing">
                                         <Card.Img src={com3} height={200} className='cards-img-mmarketing' />
                                         <Card.Body>
-                                            <Card.Title><i className="bi bi-currency-dollar"></i> Financial Services</Card.Title>
+                                            <Card.Title> Financial Services</Card.Title>
                                             <Card.Text>
                                                 It’s not just posting and creating content that explains your brand, rather it majorly includes delivering that content to the right audience to convert them into your clientele.
                                             </Card.Text>
@@ -87,7 +87,7 @@ const Marketing = () => {
                                     <Card className="h-100 custom-card-marketing">
                                         <Card.Img src={com} height={200} className='cards-img-mmarketing' />
                                         <Card.Body>
-                                            <Card.Title><i className="bi bi-laptop"></i> SEO Services</Card.Title>
+                                            <Card.Title> SEO Services</Card.Title>
                                             <Card.Text>
                                                 Enhance your online visibility and attract more customers with our tailored SEO strategies.
                                             </Card.Text>
@@ -101,7 +101,7 @@ const Marketing = () => {
                                     <Card className="h-100 custom-card-marketing">
                                         <Card.Img src={com2} height={200} className='cards-img-mmarketing' />
                                         <Card.Body>
-                                            <Card.Title><i className="bi bi-clipboard"></i> Content Creation</Card.Title>
+                                            <Card.Title> Content Creation</Card.Title>
                                             <Card.Text>
                                                 Engage your audience with high-quality, engaging content crafted by our expert writers.
                                             </Card.Text>
@@ -115,7 +115,7 @@ const Marketing = () => {
                                     <Card className="h-100 custom-card-marketing">
                                         <Card.Img src={com} height={200} className='cards-img-mmarketing' />
                                         <Card.Body>
-                                            <Card.Title><i className="bi bi-currency-dollar"></i> PPC Management</Card.Title>
+                                            <Card.Title>PPC Management</Card.Title>
                                             <Card.Text>
                                                 Maximize your ROI with our effective pay-per-click advertising strategies.
                                             </Card.Text>

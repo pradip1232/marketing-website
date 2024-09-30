@@ -1,45 +1,105 @@
 .financial-section {
-    background-color: #f7f9fc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .services-title {
-    color: #009f9b;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .services-heading {
-    color: #3a3a3a;
-    font-weight: bold;
-  }
-  
-  .services-subtext {
-    color: #6c757d;
-    margin-bottom: 30px;
-  }
-  
-  .services-subheading {
-    color: #009f9b;
-    font-weight: bold;
-  }
-  
-  .services-description {
-    color: #5e5e5e;
-    line-height: 1.6;
-  }
-  
-  .get-started-button {
-    background-color: #009f9b;
-    border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-  }
-  
-  .get-started-button:hover {
-    background-color: #007a75;
-  }
-  
+  /* background-color: #f7f9fc; */
+  /* border-radius: 10px; */
+  margin-top: 8rem !important;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+
+.financial-section .fin-main-heading {
+
+
+  width: 475px;
+  height: 57px;
+  background: #00758B;
+  border: 1px solid #00758B;
+  border-radius: 25px;
+}
+
+.services-title {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.FinancialGrowthimg {
+  width: 348px;
+  height: 518px;
+}
+
+.imgORtext {
+  margin-top: 5rem;
+}
+
+.lack-text {
+  margin-top: -15rem;
+}
+
+.services-heading {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #00758B;
+  /* font-weight: bold; */
+}
+
+.services-subtext {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.services-subheading {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #00758B;
+}
+
+.services-description {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: black;
+}
+
+.get-started-button {
+  background: #00758B;
+  box-shadow: 0px 4px 4px 0px #00000040 inset;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  border-radius: 12px;
+  letter-spacing: 0.06em;
+  /* text-align: left; */
+
+  border: none;
+  padding: 10px 20px;
+  /* font-weight: bold; */
+}
+
+.get-started-button:hover {
+  background-color: #007a75;
+}

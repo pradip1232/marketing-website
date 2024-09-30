@@ -1,6 +1,8 @@
 /* src/App.css */
 body {
   background-color: #f4f4f4;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -39,11 +41,11 @@ h6 {
 }
 
 /* Hero Section */
-.hero-section {
+/* .hero-section {
   background-image: url('img/1 1.png');
   background-size: cover;
   height: 100vh;
-}
+} */
 
 .learn-more-btn,
 .contact-btn {
