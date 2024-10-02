@@ -17,6 +17,13 @@ import DigitalMarketingServices from "./pages/DigitalMarketingServices";
 import FinancialServices from "./pages/FinancialServices";
 import HelpOffcanvas from "./components/HelpOffcanvas";
 import HelpModal from "./components/HelpModal";
+import WebDevelopment from "./pages/WebDevelopment";
+import GraphicDesigningServices from "./pages/GraphicDesigningServices";
+import HrServices from "./pages/HrServices";
+import LegalServices from "./pages/LegalServices";
+import AccountingServices from "./pages/AccountingServices";
+import PrintingServices from "./pages/PrintingServices";
+import MarketingPage from "./pages/Marketing";
 
 function App() {
   return (
@@ -35,6 +42,13 @@ function App() {
         <Route path="/Offline-Marketing-Services" element={<OfflineMarketingServices />} />
         <Route path="/Digital-Marketing-Services" element={<DigitalMarketingServices />} />
         <Route path="/Financial-Services" element={<FinancialServices />} />
+        <Route path="/pages/web-development" element={<WebDevelopment />} />
+        <Route path="/pages/graphic-designing-services" element={<GraphicDesigningServices />} />
+        <Route path="/pages/hr-services" element={<HrServices />} />
+        <Route path="/pages/legal-services" element={<LegalServices />} />
+        <Route path="/pages/accounting-services" element={<AccountingServices />} />
+        <Route path="/pages/printing-services" element={<PrintingServices />} />
+        <Route path="/pages/marketing" element={<MarketingPage />} />
       </Routes>
       <Footer />
     </Router>

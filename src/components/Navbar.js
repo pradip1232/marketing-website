@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css'; // Import skeleton CSS
@@ -9,10 +9,10 @@ import Slogo from '../img/squib logo.webp';
 
 function Navigation() {
   const location = useLocation();
-  
+
   const [loading, setLoading] = useState(true); // Loading state
   const [scrolled, setScrolled] = useState(false);
-  
+
   useEffect(() => {
     const path = location.pathname.split('/').filter(Boolean).pop();
     const pageTitle = path
@@ -38,8 +38,8 @@ function Navigation() {
   }, []);
 
   const pagesWithBackground = [
-    "/about", "/services", "/programs", "/clients", "/contact", 
-    "/Offline-Marketing-Services", "/Digital-Marketing-Services", "/Financial-Services"
+    "/about", "/services", "/programs", "/clients", "/contact", "/pages/graphic-designing-services", "/pages/hr-services", "/pages/marketing",
+    "/Offline-Marketing-Services", "/Digital-Marketing-Services", "/Financial-Services", "/pages/web-development", "/pages/legal-services", "/pages/accounting-services", "/pages/printing-services"
   ];
 
   const isPageWithBackground = pagesWithBackground.includes(location.pathname);
@@ -73,7 +73,6 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            {/* Display skeletons for nav links if loading */}
             {loading ? (
               <>
                 <Skeleton width={70} height={20} style={{ marginRight: 20 }} />
@@ -86,11 +85,18 @@ function Navigation() {
               <>
                 <Nav.Link as={Link} to="/">Home</Nav.Link>
                 <Nav.Link as={Link} to="/about">About Us</Nav.Link>
-                <Nav.Link as={Link} to="/services">Services</Nav.Link>
+
+                <NavDropdown title="Services" id="services-dropdown" className="">
+                  <NavDropdown.Item as={Link} to="/services/design">Design Services</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/services/development">Development Services</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/services/marketing">Marketing Services</NavDropdown.Item>
+                </NavDropdown>
+
                 <Nav.Link as={Link} to="/programs">Programs</Nav.Link>
                 <Nav.Link as={Link} to="/clients">Clients</Nav.Link>
                 <Nav.Link as={Link} to="/contact" className="contact-border">Contact Us</Nav.Link>
               </>
+
             )}
           </Nav>
         </Navbar.Collapse>

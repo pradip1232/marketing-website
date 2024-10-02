@@ -1,0 +1,425 @@
+.web-development-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 7rem;
+    /* Added margin to create spacing */
+}
+
+.image-container {
+    background-image: url('./../img/14 1.png');
+    /* Use your background image */
+    background-size: cover;
+    background-position: center;
+    height: 610px;
+    /* You can adjust the height for responsiveness */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Top text overlay */
+.text-overlay {
+    position: absolute;
+    top: 15%;
+    /* Adjust the vertical alignment */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Bottom text overlay */
+.text-overlay-text {
+    position: absolute;
+    bottom: 10%;
+    /* Adjust vertical alignment */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Slight dark overlay for better text contrast */
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.main-title {
+    color: #2d8d99;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #999;
+}
+
+.description-text {
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .image-container {
+        height: 400px;
+        /* Adjust height for smaller screens */
+    }
+
+    .text-overlay,
+    .text-overlay-text {
+        padding: 15px;
+    }
+
+    .main-title {
+        font-size: 2rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .description-text {
+        font-size: 1rem;
+    }
+}
+
+
+/* Button Section Styling */
+.webdevelopment-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Heading Styling */
+.service-heading {
+    background-color: #2d8d99;
+    color: white;
+    padding: 10px 20px;
+    /* Added padding for better spacing */
+    border-radius: 8px;
+    /* Rounded corners */
+    width: fit-content;
+    /* Adjusts width based on content */
+    margin: 0 auto;
+    /* Centers the heading */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-heading {
+        font-size: 1.5rem;
+        /* Adjust font size for smaller screens */
+        width: 100%;
+        /* Allow the heading to take full width on smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Section Styling */
+.services-section h2 {
+    color: #2d8d99;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Service Card Styling */
+.service-card {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-card h5 {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.service-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Hover Animation */
+.service-card:hover {
+    transform: translateY(-10px);
+    /* Move the card up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Add deeper shadow */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .service-card {
+        margin-bottom: 20px;
+    }
+
+    .services-section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Section Styling */
+.services-section h2 {
+    color: #2d8d99;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Text Area Styling */
+.text-area {
+    padding-right: 40px;
+}
+
+.service-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-list li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Service Card Styling */
+.service-card {
+    --Paper-shadow: 0px 0px 0px 0px !important;
+    /* background-color: white; */
+    padding: 0px;
+    paper: shadow 0;
+    text-align: center;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Hover Animation */
+.service-card:hover {
+    /* transform: translateY(-10px); */
+    /* Move the card up */
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+    /* Add deeper shadow */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .services-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-area {
+        padding-right: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.why-sectionshoose-or-color {
+    background: linear-gradient(90deg, #000000 0%, #00758B 100%);
+    color: white;
+    text-align: center;
+    align-items: center
+    
+    ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Container */
+.custom-section {
+    padding: 20px;
+}
+
+/* Image Styling */
+.person-img {
+    width: 100%;
+    max-width: 300px; /* Adjust the size of the image as needed */
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Custom Card Styling */
+.custom-card {
+    border: none;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+/* Number Circle Styling */
+.number-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #2d8d99;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Card Title Styling */
+.custom-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d8d99;
+}
+
+/* Expertise List Styling */
+.expertise-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.expertise-list li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

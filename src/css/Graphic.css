@@ -1,0 +1,15 @@
+.graphic-first-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+
+}
+
+.graphic-first-section h2 {
+    font-size: 24px;
+    background-color: #00758B;
+    color: white;
+
+}
