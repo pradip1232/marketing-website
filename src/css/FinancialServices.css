@@ -29,6 +29,14 @@
   text-align: center;
 }
 
+.get-start-container {
+  /* margin: 3rem 0; */
+}
+
+.get-start-container {
+  padding: 0 70px;
+}
+
 .FinancialGrowthimg {
   width: 348px;
   height: 518px;
@@ -103,3 +111,67 @@
 .get-started-button:hover {
   background-color: #007a75;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Text Area Styling */
+.text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+/* Vertical Line */
+.service-list-container {
+  display: flex;
+  position: relative;
+}
+
+.service-list-container::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  height: 83%;
+  width: 1px;
+  border: 1px solid #000000;
+  background-color: black;
+  /* Change this color to match your design */
+  margin-right: 15px;
+}
+
+/* Service List Styling */
+.service-list {
+  list-style-type: none;
+  padding-left: 30px;
+  /* Adjust this to give space for the vertical line */
+}
+
