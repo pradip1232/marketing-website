@@ -1,5 +1,10 @@
 // src/App.js
 import React from "react";
+import '@fontsource/poppins'; // Defaults to weight 400
+import '@fontsource/poppins/600.css'; // For weight 600
+import { Helmet } from 'react-helmet';
+import logo from './img/logo.png';
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navbar";
 import Home from "./pages/Home";
@@ -28,6 +33,10 @@ import MarketingPage from "./pages/Marketing";
 function App() {
   return (
     <Router>
+      <Helmet>
+        <link rel="icon" href={logo} type="image/png" />
+      </Helmet>
+
       <Navigation />
       {/* <HelpOffcanvas /> */}
       <HelpModal />
