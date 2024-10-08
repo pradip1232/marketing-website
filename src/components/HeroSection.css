@@ -77,8 +77,8 @@
 }
 
 .man-image {
-  width: 100%;
-  max-width: 661px;
+  width: 661px;
+  /* max-width: 661px; */
   height: 667px;
   margin: -5rem auto;
   margin-bottom: 20px;
@@ -445,21 +445,20 @@ a {
 
 .right-side-about-heading h3 {
   font-family: Poppins;
-  font-size: 25px;
-  font-weight: 500;
-  color: white;
-  line-height: 37.5px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
   letter-spacing: 0.02em;
   text-align: left;
+
 
 }
 
 .right-side-about-heading h4 {
   font-family: Poppins;
-  color: white;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 45px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 37.5px;
   letter-spacing: 0.02em;
   text-align: left;
 
@@ -505,6 +504,22 @@ button {
   padding: 10px 20px;
 }
 
+
+.get-start-home-btn {
+  height: 45px;
+  width: 256px;
+  font-family: Poppins !important;
+  font-size: 22px !important;
+  font-weight: 500 !important;
+  line-height: 33px !important;
+  letter-spacing: 0.06em !important;
+  text-align: center;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
 
 
 
@@ -563,7 +578,22 @@ p {
 
 
 
+.acount-heading img {
+  height: 119px;
+  width: 110px;
+}
+
+/* .height-width-home {
+  height: 111px;
+
+  width: 538px;
+  margin: 0;
+  padding: 0;
+} */
+
 .acount-heading p {
+  width: 538px;
+  height: 111px;
   font-family: Poppins;
   font-size: 18px;
   font-weight: 400;
@@ -571,6 +601,10 @@ p {
   letter-spacing: 0.02em;
   /* text-align: right; */
 
+}
+
+.mid-images-home{
+  margin-left: -31px;
 }
 
 .acount-heading h4 {

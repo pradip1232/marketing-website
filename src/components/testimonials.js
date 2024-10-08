@@ -1,20 +1,21 @@
 import React from 'react';
 import { Container, Typography, Grid, Card, CardContent } from '@mui/material';
 import { motion } from 'framer-motion';
+import qq from '../img/qq.png';
 
 const testimonials = [
   {
-    quote: `We are glad that we got in touch with Squib Factory. From posting to replying, each and every task is being handled by them, that too in a better way than we are doing it.`,
+    quote: `We are glad that we got in touch with Squib Factory. From posting to replying, each n every task is being handled by them, that too in a better way than we are doing it. Not to forget. they learn the taste of their clients in terms of social media content very quickly.`,
     name: 'Mahesh Rathore',
     company: 'Protein O Clock',
   },
   {
-    quote: `We started our marketing journey with such a company where only measurable results are delivered. By the end of the month, we got quality leads.`,
+    quote: `We started our marketing journey with such a company where only measurable results are delivered. As we were very ocncerned about the number of potential customers committed but by the end of the month, we got quality leads. On scale of 1-10, without a doubt i’ll them 10`,
     name: 'Sanket Aggarwal',
     company: 'Divine Papers',
   },
   {
-    quote: `I explained my entire project to Squib Factory's RM and team; they customized a marketing plan for branding as well as increasing my sales. Now I'm getting new prospects every day.`,
+    quote: `I explained my entire project to Squib Factory’s RM and team, they customised a marketing plan for Branding as well as for increasing my sales. Now i am getting concerned with new prospects every day and entire credit goes to Squib Factory Pvt Ltd.`,
     name: 'Hitesh Panchal',
     company: 'Wellness Coach Hitesh',
   },
@@ -75,21 +76,22 @@ const TestimonialSection = () => {
                 }}
               >
                 <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                  <img src={qq} height={28} width={40} />
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     sx={{
                       mb: 3,
                       fontFamily: 'Poppins, sans-serif',
-                      fontSize: '25px',
-                      fontWeight: 500,
+                      fontSize: '18px',
+                      fontWeight: 400,
                       color: 'rgba(0, 0, 0, 1)',
-                      lineHeight: '37.5px',
-                      letterSpacing: '0.02em',
+                      lineHeight: '27.5px',
+                      letterSpacing: '2%',
                       flexGrow: 1 // Pushes the name to the bottom
                     }}
                   >
-                    “{testimonial.quote}”
+                    {testimonial.quote}
                   </Typography>
                   {/* Name and Company at the bottom */}
                   <div>
@@ -97,7 +99,7 @@ const TestimonialSection = () => {
                       variant="h6"
                       component="p"
                       sx={{
-                        fontWeight: 'bold',
+                        fontWeight: '500',
                         color: 'rgba(0, 117, 139, 1)',
                         fontFamily: 'Poppins, sans-serif',
                         fontSize: '25px',

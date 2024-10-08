@@ -81,6 +81,15 @@
   text-align: left;
   color: #00758B;
 }
+.services-subheading2 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  /* color: #00758B; */
+}
 
 .services-description {
   font-family: Poppins;
@@ -162,7 +171,7 @@
   top: 0;
   height: 83%;
   width: 1px;
-  border: 1px solid #000000;
+  /* border: 1px solid #000000; */
   background-color: black;
   /* Change this color to match your design */
   margin-right: 15px;

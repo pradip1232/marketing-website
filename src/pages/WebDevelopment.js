@@ -81,10 +81,40 @@ const WebDevelopment = () => {
             </div>
 
             {/* New Section */}
-            <Container className="mt-5 mb-5 text-center webdevelopment-btn">
-                <Row className="justify-content-center">
+            <Container className="mt-5 pt-5 pb-5 mb-5 text-center webdevelopment-btn">
+                {/* <Row className="justify-content-center">
                     <Col md={12} className="text-center">
                         <h2 className="service-heading">Website Development Services</h2>
+                    </Col>
+                </Row> */}
+
+                <Row>
+                    <Col xs={12} className='' style={{
+                        height: '57px',
+                        width: '641px',
+                        background: 'rgba(0, 117, 139, 1)',
+                        border: '1px solid rgba(0, 117, 139, 1)',
+                        borderRadius: '25px',
+
+                    }}>
+                        {/* <div className='hr-services-text'>
+                            <Row>
+                                <Col md={5}> */}
+                        <h2 style={{
+                            padding: '4px 0',
+                            fontFamily: 'Poppins',
+                            fontWeight: '700',
+                            fontSize: '32px',
+                            lineHeight: '48px',
+                            color: '#fff',
+                            letterSpacing: '2%',
+                            alignItems: 'center',
+
+                        }}>Website Development Services
+                        </h2>
+                        {/* </Col>
+                            </Row>
+                        </div> */}
                     </Col>
                 </Row>
             </Container>
@@ -195,13 +225,13 @@ const WebDevelopment = () => {
                 <Container className="py-5">
 
                     <Row className="d-flex justify-content-center">
-                        <Col md={9}>
+                        <Col md={10}>
                             <h2>
                                 Why Choose Squib Factory for Website Development?
                             </h2>
-                            <h5>Proven Track Record of Success
-                                Tailored Solutions for Every Business
-                                Emphasis on User Experience and Conversion
+                            <h5>Proven Track Record of Success <br />
+                                Tailored Solutions for Every Business<br />
+                                Emphasis on User Experience and Conversion<br />
                                 Software Development Services</h5>
                         </Col>
                     </Row>
@@ -224,7 +254,7 @@ const WebDevelopment = () => {
                     {/* Left Image Section */}
                     <Col md={5} className="image-section">
                         <Box className="image-border">
-                            <img src={Man} alt="Person" className="info-image" />
+                            <img src={Man} alt="Person" className="info-image-web" />
                         </Box>
                     </Col>
 
@@ -317,7 +347,7 @@ const WebDevelopment = () => {
                             <h2>
                                 Why Opt for Squib Factory for Software Development?
                             </h2>
-                            <h5>Experienced and Agile Development Team Comprehensive Understanding of Business Processes Commitment to Quality and Timely Delivery
+                            <h5>Experienced and Agile Development Team <br/> Comprehensive Understanding of Business Processes<br/> Commitment to Quality and Timely Delivery<br/>
                                 Seamless Integration with Digital Marketing</h5>
                         </Col>
                     </Row>
@@ -352,7 +382,7 @@ const WebDevelopment = () => {
                 <Container className="py-5">
 
                     <Row className="d-flex justify-content-center">
-                        <Col md={10}>
+                        <Col md={11}>
                             <h2>
                                 Ready to Elevate Your Digital Presence?
                             </h2>

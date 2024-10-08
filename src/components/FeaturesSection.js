@@ -14,7 +14,7 @@ const FeaturesSection = () => {
             <Container>
                 {/* First Feature (Right Side Image) */}
                 <Row className=" align-items-right text-right justify-content-end feature">
-                    <Col md={7} className='text-right'>
+                    <Col md={6} className='text-right height-width-home'>
                         <h4 >Accountability</h4>
                         <p>
                             It's not just words, we provide measurable data reports in a timely manner to give you
@@ -22,29 +22,30 @@ const FeaturesSection = () => {
                             client is all we need!!
                         </p>
                     </Col>
-                    <Col md={2} className="text-center">
-                        <Image src={thumb} alt="Accountability Icon" fluid />
+                    <Col md={1} className="text-center">
+                        <Image src={thumb} alt="Accountability Icon" />
                     </Col>
                 </Row>
 
                 {/* Second Feature (Left Side Image) */}
                 <Row className="align-items-center feature-c flex-row-reverse87">
-                    <Col md={2} className="text-center">
-                        <Image src={grow} alt="Growth Icon" fluid />
+                    <Col md={1} className="text-center ml-2 pl-2">
+                        <Image src={grow2} alt="Growth Icon" className='ml-2 pl-2 mid-images-home' fluid3232 />
                     </Col>
                     <Col md={7}>
                         <h4>Your Growth is our Focus</h4>
                         <p>
-                            Our goal is to give you exponential growth, and what could be better than having an
-                            increase in sales? We aim to provide you sustainable growth in revenue along with
-                            maximized brand awareness through the various services we provide.
+                            Our goal is to give you exponential growth, and what could be better than having an increase in sales.
+                            <br />
+                            <br />
+                            Yes, you read it correct. We aim to provide you sustainable growth in revenue along with maximized brand awareness through various services we provide.
                         </p>
                     </Col>
                 </Row>
 
                 {/* Third Feature (Right Side Image) */}
-                <Row className="align-items-right text-right justify-content-end feature">
-                    <Col md={7} className='text-right'>
+                <Row className="align-items-right text-right justify-content-end feature mt-5 pt-5">
+                    <Col md={6} className='text-right'>
                         <h4>One-Stop Service Provider</h4>
                         <p>
                             Every business caters to a different audience with different objectives. Hence, to
@@ -52,8 +53,8 @@ const FeaturesSection = () => {
                             create a ONE-STOP service providing company for your business.
                         </p>
                     </Col>
-                    <Col md={2} className="text-center">
-                        <Image src={grow2} alt="Service Provider Icon" fluid />
+                    <Col md={1} className="text-center">
+                        <Image src={grow} alt="Service Provider Icon" flui3232d />
                     </Col>
                 </Row>
             </Container>

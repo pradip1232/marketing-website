@@ -146,7 +146,7 @@
 
 .contact-box {
     margin-top: 40px;
-    margin-left: 335px;
+    margin-left: 228px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -175,12 +175,13 @@
     margin-left: 10px;
     font-weight: 500;
     color: #00758B;
+    border-radius: 13px !important;
 }
 
 .arrow-image {
     position: absolute;
-    right: 6px;
-    top: -84px;
+    right: 27px;
+    top: -93px;
     width: 174px;
     height: auto;
     animation: arrow-bounce 2s infinite;

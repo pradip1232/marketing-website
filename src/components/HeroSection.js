@@ -82,7 +82,7 @@ const HeroSection = () => {
                   <h4>A Visionary aim to deliver ease-of-doing-business for all !!</h4>
                   <p>The company was established with a view to support businesses to expand and help them grow exponentially.</p>
                   <p className="mt-5 pt-4">We provide services related to different industries and have a team of experienced members from various backgrounds.</p>
-                  <Button className="outline-primary-white2" >Get Started Now</Button>
+                  <Button className="outline-primary-white2 get-start-home-btn" >Get Started Now</Button>
                 </div>
               </Col>
             </Row>

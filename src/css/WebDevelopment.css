@@ -17,12 +17,13 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    top: 25px;
 }
 
 /* Top text overlay */
 .text-overlay {
     position: absolute;
-    top: 3%;
+    top: 1%;
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
@@ -394,7 +395,7 @@
     line-height: 37.5px;
     letter-spacing: 0.02em;
     text-align: center;
-    padding: 0 9rem;
+    /* padding: 0 9rem; */
 
 }
 
@@ -528,4 +529,30 @@
 
 .cate-varients2 {
     padding-top: 6rem !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info-image-web {
+    height: 649px;
+    margin-top: -70px;
+    width: 373px;
+    border-radius: 8px;
 }

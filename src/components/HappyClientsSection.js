@@ -8,7 +8,7 @@ const HappyClientsSection = () => {
             <Container fluid className="text-center hppy-clint-cont">
                 {/* Section Heading */}
                 <h1 className="happy-heading">HAPPY CLIENTS</h1>
-                <h4 className="happy-subheading">Our Happy Clients</h4>
+                <h4 className="happy-subheading text-center">Our Happy Clients</h4>
                 <p>We are delighted to have catered to all these brands.</p>
 
                 {/* Carousel */}
