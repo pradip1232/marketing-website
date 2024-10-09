@@ -100,8 +100,8 @@
 }
 
 .arrow {
-    height: 143px;
-    width: 291px;
+    height: 200px;
+    width: 358px;
 }
 
 .central-card {
@@ -129,9 +129,9 @@
 }
 
 .arrow-up {
-    top: -244%;
-    left: 63%;
-    transform: rotate(-13deg);
+    top: -207%;
+    left: 57%;
+    transform: rotate(-14deg);
     /* transform: translate(-50%, -50%); */
 }
 

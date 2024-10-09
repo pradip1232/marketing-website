@@ -17,28 +17,24 @@
 
 .image-border {
     box-shadow: 0px 4px 4px 0px #00000040 inset !important;
-    height: 602px;
+    height: 630px;
     width: 435px;
     /* box-shadow: 0px 4px 4px 0px #00000040 !important; */
-
-    padding: 15px;
-    /* Space between border and image */
+    /* padding: 15px; */
     border-radius: 10px;
-    /* Rounded corners for the border */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    /* Light shadow */
-    max-width: 482px;
+    /* max-width: 482px;
     /* Set a max width for the image section */
 }
 
 .info-image {
-    height: 649px;
-    margin-top: -70px;
-    width: 100%;
-    /* Full width inside the border */
+    height: 658px;
+    margin-top: -32px;
+    /* width: 438px; */
     border-radius: 8px;
-    /* Rounded corners for the image */
+    margin-left: -79px;
 }
+
 
 .content-section {
     display: flex;
@@ -59,7 +55,7 @@
 .info-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     /* Space between items */
 }
 

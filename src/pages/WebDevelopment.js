@@ -253,16 +253,16 @@ const WebDevelopment = () => {
                 <Row>
                     {/* Left Image Section */}
                     <Col md={5} className="image-section">
-                        <Box className="image-border">
+                        <Box className="image-border-web">
                             <img src={Man} alt="Person" className="info-image-web" />
                         </Box>
                     </Col>
 
                     {/* Right Content Section */}
-                    <Col md={7} className="content-section">
+                    <Col md={7} className="content-section-web">
                         <Box className="info-content">
                             {infoData.map((item, index) => (
-                                <Row key={index} className="info-item">
+                                <Row key={index} className="info-item mb-5">
                                     <Col md={2}>
                                         <Box className="number-box mt-2">{item.number}</Box>
                                     </Col>
@@ -347,7 +347,7 @@ const WebDevelopment = () => {
                             <h2>
                                 Why Opt for Squib Factory for Software Development?
                             </h2>
-                            <h5>Experienced and Agile Development Team <br/> Comprehensive Understanding of Business Processes<br/> Commitment to Quality and Timely Delivery<br/>
+                            <h5>Experienced and Agile Development Team <br /> Comprehensive Understanding of Business Processes<br /> Commitment to Quality and Timely Delivery<br />
                                 Seamless Integration with Digital Marketing</h5>
                         </Col>
                     </Row>

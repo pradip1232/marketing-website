@@ -9,7 +9,7 @@ const AdvertisementSection = () => {
         <>
             <Container fluid className='why-choose-us'>
                 <Row>
-                    <Col md={10}>
+                    <Col md={11}>
                         <h2>Why Choose Us ?</h2>
                         <p>
                             We convert your vision into a success story with assured results all across INDIA. From rural areas to sub-urban to metropolitan cities, we have presence everywhere
@@ -109,8 +109,9 @@ const AdvertisementSection = () => {
 
 
                     {/* Arrows */}
-                    <img src={img} className="arrow arrow-up" />
-                    <img src={img} className="arrow arrow-down" />
+                    {/* <img src={img} className="arrow arrow-up" />
+                    <img src={img} className="arrow arrow-up2" />
+                    <img src={img} className="arrow arrow-down" /> */}
                     {/* 
                 <img src={img} className="arrow arrow-right" />
                 <img src={img} className="arrow arrow-left" />

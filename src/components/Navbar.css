@@ -18,6 +18,33 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   /* color: red!important; */
 }
+.dropdown-hover:hover .dropdown-menu {
+  display: block; /* Show the dropdown menu on hover */
+}
+
+
+.dropdown-background .transparent-text {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0px !important;
+  /* Optional */
+}
+
+.dropdown-menu {
+  border-radius: 4px!important;
+  font-family: 'Poppins';
+  font-weight: 400!important;
+  font-size: 18px!important;
+}
+
+.transparent-text {
+  color: transparent;
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.dropdown-item:hover .transparent-text {
+  color: white; /* Change to desired color on hover */
+}
 
 
 

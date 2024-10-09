@@ -6,6 +6,26 @@
     text-align: center;
 }
 
+.marketing-text p {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.07em;
+    text-align: center;
+
+}
+
+.marketing-text h2 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0.07em;
+    text-align: center;
+    color: #00758B;
+}
+
 .marketing-text {
     /* display: flex; */
     padding: 50px 50px;
@@ -42,16 +62,20 @@
     padding: 20px;
 }
 
-.custom-card {
-    background: #f8f9fa;
+.custom-card-m {
+    /* background: #f8f9fa; */
+    border: 1px solid #000000 !important;
+    box-shadow: 0px 4px 4px 0px #00000040 !important;
+
     /* Light background */
     margin-bottom: 15px;
     border: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
+    padding: 9px;
 }
 
 .square-card {
@@ -74,10 +98,89 @@
     text-align: center;
 }
 
+.first-col img {
+    align-items: flex-start;
+    text-align: left;
+    height: 72px;
+    width: 72px;
+}
+
+.first-col .card-body {
+    padding: 0 !important;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.07em;
+    text-align: left;
+
+}
+
+.second-col img {
+    align-items: flex-start;
+    text-align: left;
+    height: 72px;
+    width: 72px;
+}
+
+.second-col .card-body {
+    padding: 0 !important;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.07em;
+    text-align: left;
+
+}
+
+.digi-heading-m {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0 75px;
+}
+
+.digi-cont-m {
+    padding: 0 55px;
+}
+
+.third-col img {
+    align-items: flex-start;
+    text-align: left;
+    height: 72px;
+    width: 72px;
+}
+
+.third-col .card-body {
+    padding: 0 !important;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.07em;
+    text-align: left;
+
+}
+
 .first-col,
 .second-col,
 .third-col {
-    text-align: center;
+    /* text-align: center; */
+}
+
+.color-mid-cards {
+    background: #00758B;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: white;
 }
 
 .second-col {
@@ -93,3 +196,54 @@
     height: auto;
     display: block;
 }
+
+.image-container-m {
+    /* background-image: url(http://localhost:3000/static/media/14%201.c8b9099….png); */
+    background-size: cover;
+    background-position: center;
+    height: 610px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 25px;
+}
+
+.image-container-m img {
+    height: 434px;
+    width: 425px;
+}
+
+.digital-marketing-section {
+    background-image: url('.././img/jj\ 1.png');
+    background-size: cover;
+    background-position: center;
+    height: 596px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 25px;
+    margin-bottom: 20px;
+}
+
+.marketing-heading-m {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0.02em;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 0 75px;
+}
+
+.digimarketing-section-marketing {
+    padding: 50px 0;
+
+}
+
+.offline-marketingsection-marketing {
+    padding-bottom: 40px;
+}
+

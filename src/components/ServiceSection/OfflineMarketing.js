@@ -7,7 +7,7 @@ const OfflineMarketing = () => {
         <Container fluid className="marketing-section">
             <div className="align-items-center  justify-content-center">
                 <div className=" container position-absolute">
-                    <div className="ml-md-4 pl-md-4" style={{ padding: '60px 64px' }}>
+                    <div className="ml-md-4 pl-md-4" style={{ padding: '60px 85px' }}>
                         <h2 className="marketing-title">Offline Marketing</h2>
                         <p className="marketing-description">
                             Experience the best-in-industry services by our team of experts catering to multiple clients across different industries.

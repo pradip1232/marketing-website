@@ -7,6 +7,8 @@ import { useInView } from 'react-intersection-observer';
 import './StatsSection.css'; // Make sure to create and style this CSS file
 import LookingWithContactBtn from '../HomeSections/LookingWithContactBtn';
 
+
+import qq from '../../img/qq.png';
 const StatsSection = () => {
     const { ref, inView } = useInView({
         triggerOnce: true, // Trigger the animation only once
@@ -16,12 +18,16 @@ const StatsSection = () => {
     return (
         <Container fluid className="stats-section1" ref={ref}>
             {/* Quote Section */}
-            <div className="stats-section text-center justify-content-center" height={351}>
+            <div className="stats-section text-centerr justify-content-center" height={351}>
 
-                <Row className="quote-section text-center justify-content-center">
+                <Row className="quote-section text-centerrr justify-content-center">
                     <Col md={6} className='text-colors border-dark'>
+                        <img src={qq} height={24} width={30} className='text-left ml-2' style={{
+                            marginLeft: '20px'
+
+                        }} />
                         <Typography variant="h4" className="quote">
-                            "YOU CAN'T SELL, IF YOU CAN'T TELL"
+                            YOU CAN'T SELL, IF YOU CAN'T TELL
                         </Typography>
                         <Typography variant="subtitle1" className="quote-author">
                             - Beth Comstock

@@ -6,6 +6,9 @@ import 'react-loading-skeleton/dist/skeleton.css'; // Import skeleton CSS
 import "./Navbar.css";
 import logo from '../images/logo.png';
 import Slogo from '../img/squib logo.webp';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 
 function Navigation() {
   const location = useLocation();
@@ -71,11 +74,12 @@ function Navigation() {
           )}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             {loading ? (
               <>
-                <Skeleton width={70} height={20} style={{ marginRight: 20 }} />
                 <Skeleton width={70} height={20} style={{ marginRight: 20 }} />
                 <Skeleton width={70} height={20} style={{ marginRight: 20 }} />
                 <Skeleton width={70} height={20} style={{ marginRight: 20 }} />
@@ -86,20 +90,50 @@ function Navigation() {
                 <Nav.Link as={Link} to="/">Home</Nav.Link>
                 <Nav.Link as={Link} to="/about">About Us</Nav.Link>
 
-                <NavDropdown title="Services" id="services-dropdown" className="">
-                  <NavDropdown.Item as={Link} to="/services/design">Design Services</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/services/development">Development Services</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/services/marketing">Marketing Services</NavDropdown.Item>
-                </NavDropdown>
+                <div className="dropdown-hover">
+                  <NavDropdown
+                    title="Services"
+                    id="services-dropdown"
+                    className="dropdown-background"
+                  >
+                    <NavDropdown.Item as={Link} to="Digital-Marketing-Services" className="transparent-text">
+                      Digital Marketing Services
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="Offline-Marketing-Services" className="transparent-text">
+                      Offline Marketing Services
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="Financial-Services" className="transparent-text">
+                      Financial Services
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/pages/graphic-designing-services" className="transparent-text">
+                      Graphic Designing Services
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/pages/hr-services" className="transparent-text">
+                      HR Services
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/pages/legal-services" className="transparent-text">
+                      Legal Services
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/pages/accounting-services" className="transparent-text">
+                      Accounting Services
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/pages/printing-services" className="transparent-text">
+                      Printing Services
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/pages/web-development" className="transparent-text">
+                      Web Development
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </div>
 
                 <Nav.Link as={Link} to="/programs">Programs</Nav.Link>
                 <Nav.Link as={Link} to="/clients">Clients</Nav.Link>
                 <Nav.Link as={Link} to="/contact" className="contact-border">Contact Us</Nav.Link>
               </>
-
             )}
           </Nav>
         </Navbar.Collapse>
+
       </Container>
     </Navbar>
   );
