@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Card, Col, Row, Button } from 'react-bootstrap'
-import mm from './../img/66 1.png';
+// import mm from './../img/66 1.png';
+import mm from './../img/1  (6).webp';
 import dd from './../img/44 1.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

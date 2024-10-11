@@ -29,6 +29,8 @@ import LegalServices from "./pages/LegalServices";
 import AccountingServices from "./pages/AccountingServices";
 import PrintingServices from "./pages/PrintingServices";
 import MarketingPage from "./pages/Marketing";
+import BussniessCard from "./components/forms/Bussniess";
+import VerticalStepper from "./components/forms/VerticalStepper";
 
 function App() {
   return (
@@ -42,6 +44,8 @@ function App() {
       <HelpModal />
       <Routes>
 
+        <Route path="/forms/BussniessCard" element={<BussniessCard />} />
+        <Route path="/forms/VerticalStepper" element={<VerticalStepper />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />

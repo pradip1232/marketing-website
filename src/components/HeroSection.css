@@ -77,7 +77,7 @@
 }
 
 .man-image {
-  width: 661px;
+  width: 611px;
   /* max-width: 661px; */
   height: 667px;
   margin: -5rem auto;
@@ -106,6 +106,11 @@
   letter-spacing: 0.02em;
   text-align: center;
 
+}
+
+.let-contact-btn {
+  margin-top: -23px!important;
+  margin-left: 57px!important;
 }
 
 .home-text-col {
@@ -192,6 +197,19 @@
 
 
 
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -179px;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+}
 
 
 
@@ -603,7 +621,7 @@ p {
 
 }
 
-.mid-images-home{
+.mid-images-home {
   margin-left: -31px;
 }
 

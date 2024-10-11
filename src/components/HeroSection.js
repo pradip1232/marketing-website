@@ -5,7 +5,8 @@ import { Button, Row, Col, Container } from 'react-bootstrap';
 import HappyClientsSection from './HappyClientsSection';
 import TestimonialSection from './testimonials';
 import FeaturesSection from './FeaturesSection';
-import man from '../img/Group 95.png';
+// import man from '../img/Group 95.png';
+import man from '../img/1  (1).webp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Marketing from './HomeSections/Marketing';
 import girls from './../img/5 1.png';
@@ -57,7 +58,7 @@ const HeroSection = () => {
               ) : (
                 <>
                   <img className="man-image" src={man} alt="man" />
-                  <button className=" contact-btn">Let’s Connect</button>
+                  <button className=" contact-btn let-contact-btn">Let’s Connect</button>
                 </>
               )}
             </div>
@@ -128,8 +129,8 @@ const HeroSection = () => {
                   fontWeight: '400',
                   color: '#333',
                   lineHeight: '1.6',
-                  height: '50px',
-                  width: '161px',
+                  height: '41px',
+                  width: '194px',
                   border: '1px solid rgba(0, 0, 0, 1)',
                   display: 'flex',
                   justifyContent: 'center',

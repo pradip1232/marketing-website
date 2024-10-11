@@ -23,12 +23,12 @@ const Footer = () => {
 
           {/* Social and Copyright Section */}
           <Col xs={12} md={4}>
-            <p>© 2023 Squib Factory</p>
             <div>
               <FaFacebook size={25} className="me-2" />
               <FaInstagram size={25} />
             </div>
-            <p>Built using WordPress and the Mesmerize Theme</p>
+            <p>© 2024 Squib Factory</p>
+            {/* <p>Built using WordPress and the Mesmerize Theme</p> */}
           </Col>
         </Row>
       </Container>

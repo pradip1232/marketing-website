@@ -83,9 +83,7 @@ const Contact = () => {
               <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                 <FaInstagram size={43} className="mx-2 text-danger" aria-label="Instagram" />
               </a>
-              <a href="https://www.telegram.org" target="_blank" rel="noopener noreferrer">
-                <FaTelegram size={43} className="mx-2 text-info" aria-label="Telegram" />
-              </a>
+          
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin size={43} className="mx-2 text-primary" aria-label="LinkedIn" />
               </a>
@@ -201,7 +199,7 @@ const Contact = () => {
         </Row>
         <Row className="text-center  mt-4">
           <Col>
-            <p>We look forward to hearing from you and helping you achieve your digital marketing goals!</p>
+            <p className='last-text-contact'>We look forward to hearing from you and helping you achieve your digital marketing goals!</p>
           </Col>
         </Row>
       </Container >
