@@ -19,7 +19,7 @@ const Marketing = () => {
                     {/* Title Section */}
                     <Row>
                         <Col xs={6}>
-                            <div className="text-left text-heading-servics mb-4">
+                        <div  className="text-left text-heading-servics mb-4">
                                 <h2>Our Service</h2>
                                 <h3 className="text-primary32">We Can Help You Solve Your Problems Through Our Services</h3>
                                 <p>

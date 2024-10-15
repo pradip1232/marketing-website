@@ -1,0 +1,51 @@
+.css-3hpdci-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
+    color: #00758B !important;
+
+    /* background-color: aqua !important; */
+}
+
+.css-3hpdci-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+    color: #00758B !important;
+    /* background-color: #00758B !important; */
+}
+
+
+.css-1abvrni-MuiButtonBase-root-MuiButton-root {
+    border: 1px solid #00758B !important;
+    color: black !important;
+    background-color: white !important;
+    border-radius: 7px !important;
+    width: 88px !important;
+    height: 40px !important;
+    /* top: 472px; */
+    /* left: 568px; */
+    gap: 0px;
+    border-radius: 7px !important;
+    border: 1px 0px 0px 0px !important;
+    opacity: 0px !important;
+    font-family: Poppins !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 27px !important;
+    text-align: center !important;
+
+
+}
+
+
+
+
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
