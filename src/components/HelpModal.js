@@ -57,7 +57,7 @@ const HelpModal = () => {
     return (
         <>
             {/* Help Icon Button at the Bottom Right */}
-            <div className="help-icon" onClick={handleShow} style={{background:'transparent'}}>
+            <div className="help-icon" onClick={handleShow} style={{ background: 'transparent' }}>
                 {/* <FontAwesomeIcon icon={faHeadset} size="2x" /> */}
                 <span className="help-text">
                     <img src={help} alt="Help Icon" style={{ width: '70px', height: '70px' }} />
@@ -71,6 +71,7 @@ const HelpModal = () => {
                 dialogClassName="custom-modal"
                 backdrop="static"
                 keyboard={false}
+                style={{ padding: '1px', }}
             >
                 <Modal.Header closeButton>
                     <Modal.Title>How can I help you?</Modal.Title>
@@ -122,7 +123,7 @@ const HelpModal = () => {
                             />
                         </Form.Group>
 
-                        <Button className="float-right" variant="primary" type="submit">
+                        <Button className="float-right submit-btn-home" variant="" type="submit">
                             Submit
                         </Button>
                     </Form>

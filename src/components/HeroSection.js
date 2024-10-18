@@ -95,9 +95,12 @@ const HeroSection = () => {
 
               <>
                 <img className="man-image" src={man} alt="man" />
-                <button className="contact-btn let-contact-btn" onClick={handleOpen}>
+                <button className="contact-btn let-contact-btn" >
                   Let’s Connect
                 </button>
+                {/* <button className="contact-btn let-contact-btn" onClick={handleOpen}>
+                  Let’s Connect
+                </button>         */}
               </>
 
             </animated.div>

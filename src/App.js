@@ -4,6 +4,7 @@ import '@fontsource/poppins'; // Defaults to weight 400
 import '@fontsource/poppins/600.css'; // For weight 600
 import { Helmet } from 'react-helmet';
 import logo from './img/logo.png';
+import title from './img/squib logo circle.webp';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navbar";
@@ -31,12 +32,13 @@ import PrintingServices from "./pages/PrintingServices";
 import MarketingPage from "./pages/Marketing";
 import BussniessCard from "./components/forms/Bussniess";
 import VerticalStepper from "./components/forms/VerticalStepper";
+import MM from "./components/HomeSections/MM";
 
 function App() {
   return (
     <Router>
       <Helmet>
-        <link rel="icon" href={logo} type="image/png" />
+        <link rel="icon" href={title} type="image/png" />
       </Helmet>
 
       <Navigation />
@@ -52,16 +54,19 @@ function App() {
         <Route path="/programs" element={<Programs />} />
         <Route path="/clients" element={<Clients />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/Offline-Marketing-Services" element={<OfflineMarketingServices />} />
-        <Route path="/Digital-Marketing-Services" element={<DigitalMarketingServices />} />
-        <Route path="/Financial-Services" element={<FinancialServices />} />
-        <Route path="/pages/web-development" element={<WebDevelopment />} />
-        <Route path="/pages/graphic-designing-services" element={<GraphicDesigningServices />} />
-        <Route path="/pages/hr-services" element={<HrServices />} />
-        <Route path="/pages/legal-services" element={<LegalServices />} />
-        <Route path="/pages/accounting-services" element={<AccountingServices />} />
-        <Route path="/pages/printing-services" element={<PrintingServices />} />
-        <Route path="/pages/marketing" element={<MarketingPage />} />
+        <Route path="Offline-Marketing-Services" element={<OfflineMarketingServices />} />
+        <Route path="Digital-Marketing-Services" element={<DigitalMarketingServices />} />
+        <Route path="Financial-Services" element={<FinancialServices />} />
+        <Route path="web-development" element={<WebDevelopment />} />
+        <Route path="graphic-designing-services" element={<GraphicDesigningServices />} />
+        <Route path="hr-services" element={<HrServices />} />
+        <Route path="legal-services" element={<LegalServices />} />
+        <Route path="accounting-services" element={<AccountingServices />} />
+        <Route path="printing-services" element={<PrintingServices />} />
+        <Route path="marketing" element={<MarketingPage />} />
+        <Route path="/newmodal" element={<MM />} />
+        
+
       </Routes>
       <Footer />
     </Router>

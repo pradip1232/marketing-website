@@ -1,3 +1,33 @@
+.modal-form {
+    width: 100%;
+}
+
+.stepper {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.form-content {
+    width: 70%;
+}
+
+.service-button {
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
 .css-3hpdci-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
     color: #00758B !important;
 
@@ -45,7 +75,34 @@
 
 .modal-content {
     background-color: white;
-    padding: 20px;
+    padding: 2px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn-home{
+    background-color: #00758B;
+    color: aliceblue;
+}
+
+.css-1iw68k4-MuiButtonBase-root-MuiButton-root {
+    color: white !important;
+    background-color: #00758B !important;
+}
+
+.css-1xaulrf-MuiButtonBase-root-MuiButton-root {
+    border-radius: 0 !important;
+    border-color: #00758B !important;
+    background-color: white !important;
+    color: black !important;
+
+}
+
+.css-1jzokww-MuiTypography-root {
+    font-family: Poppins !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 21px !important;
+    text-align: left;
+    color: #00758B !important;
 }

@@ -41,8 +41,8 @@ function Navigation() {
   }, []);
 
   const pagesWithBackground = [
-    "/about", "/services", "/programs", "/clients", "/contact", "/pages/graphic-designing-services", "/pages/hr-services", "/pages/marketing",
-    "/Offline-Marketing-Services", "/Digital-Marketing-Services", "/Financial-Services", "/pages/web-development", "/pages/legal-services", "/pages/accounting-services", "/pages/printing-services"
+    "/about", "/services", "/programs", "/clients", "/contact", "/graphic-designing-services", "/hr-services", "/marketing","/newmodal",
+    "/Offline-Marketing-Services", "/Digital-Marketing-Services", "/Financial-Services", "/web-development", "/legal-services", "/accounting-services", "/printing-services"
   ];
 
   const isPageWithBackground = pagesWithBackground.includes(location.pathname);
@@ -105,29 +105,29 @@ function Navigation() {
                     <NavDropdown.Item as={Link} to="Financial-Services" className="transparent-text">
                       Financial Services
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/pages/graphic-designing-services" className="transparent-text">
+                    <NavDropdown.Item as={Link} to="graphic-designing-services" className="transparent-text">
                       Graphic Designing Services
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/pages/hr-services" className="transparent-text">
+                    <NavDropdown.Item as={Link} to="hr-services" className="transparent-text">
                       HR Services
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/pages/legal-services" className="transparent-text">
+                    <NavDropdown.Item as={Link} to="legal-services" className="transparent-text">
                       Legal Services
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/pages/accounting-services" className="transparent-text">
+                    <NavDropdown.Item as={Link} to="accounting-services" className="transparent-text">
                       Accounting Services
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/pages/printing-services" className="transparent-text">
+                    <NavDropdown.Item as={Link} to="printing-services" className="transparent-text">
                       Printing Services
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/pages/web-development" className="transparent-text">
+                    <NavDropdown.Item as={Link} to="web-development" className="transparent-text">
                       Web Development
                     </NavDropdown.Item>
                   </NavDropdown>
                 </div>
 
-                <Nav.Link as={Link} to="/programs">Programs</Nav.Link>
-                <Nav.Link as={Link} to="/clients">Clients</Nav.Link>
+                <Nav.Link as={Link} to="/">Programs</Nav.Link>
+                <Nav.Link as={Link} to="/">Clients</Nav.Link>
                 <Nav.Link as={Link} to="/contact" className="contact-border">Contact Us</Nav.Link>
               </>
             )}

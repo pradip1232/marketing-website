@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Button, Row, Col, Container, Carousel } from 'react-bootstrap';
 import { AccountBalance, TrendingUp, Group } from '@mui/icons-material'; // MUI Icons
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom";
 
 
 import com from '../../img/mm/4 1.png';
@@ -19,7 +20,7 @@ const Marketing = () => {
                     {/* Title Section */}
                     <Row>
                         <Col xs={6}>
-                        <div  className="text-left text-heading-servics mb-4">
+                            <div className="text-left text-heading-servics mb-4">
                                 <h2>Our Service</h2>
                                 <h3 className="text-primary32">We Can Help You Solve Your Problems Through Our Services</h3>
                                 <p>
@@ -44,7 +45,7 @@ const Marketing = () => {
                                             <Card.Text>
                                                 It’s not just posting and creating content that explains your brand, rather it majorly includes delivering that content to the right audience to convert them into your clientele.
                                             </Card.Text>
-                                            <a href="Digital-Marketing-Services" className="btn btn-link">Learn more</a>
+                                            <Link to="Digital-Marketing-Services" className="btn btn-link">Learn more</Link>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -58,7 +59,7 @@ const Marketing = () => {
                                             <Card.Text>
                                                 It’s not just posting and creating content that explains your brand, rather it majorly includes delivering that content to the right audience to convert them into your clientele.
                                             </Card.Text>
-                                            <a href="Offline-Marketing-Services" className="btn btn-link">Learn more</a>
+                                            <Link to="Offline-Marketing-Services" className="btn btn-link">Learn more</Link>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -72,7 +73,7 @@ const Marketing = () => {
                                             <Card.Text>
                                                 It’s not just posting and creating content that explains your brand, rather it majorly includes delivering that content to the right audience to convert them into your clientele.
                                             </Card.Text>
-                                            <a href="Financial-Services" className="btn btn-link">Learn more</a>
+                                            <Link to="Financial-Services" className="btn btn-link">Learn more</Link>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -91,7 +92,7 @@ const Marketing = () => {
                                             <Card.Text>
                                                 Enhance your online visibility and attract more customers with our tailored SEO strategies.
                                             </Card.Text>
-                                            <a href="/pages/hr-services" className="btn btn-link">Learn more</a>
+                                            <Link to="hr-services" className="btn btn-link">Learn more</Link>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -105,7 +106,7 @@ const Marketing = () => {
                                             <Card.Text>
                                                 Engage your audience with high-quality, engaging content crafted by our expert writers.
                                             </Card.Text>
-                                            <a href="/pages/graphic-designing-services" className="btn btn-link">Learn more</a>
+                                            <Link to="graphic-designing-services" className="btn btn-link">Learn more</Link>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -119,7 +120,7 @@ const Marketing = () => {
                                             <Card.Text>
                                                 Maximize your ROI with our effective pay-per-click advertising strategies.
                                             </Card.Text>
-                                            <a href="/pages/web-development" className="btn btn-link">Learn more</a>
+                                            <Link to="web-development" className="btn btn-link">Learn more</Link>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -137,7 +138,7 @@ const Marketing = () => {
                                             <Card.Text>
                                                 Enhance your online visibility and attract more customers with our tailored SEO strategies.
                                             </Card.Text>
-                                            <a href="/pages/legal-services" className="btn btn-link">Learn more</a>
+                                            <Link to="legal-services" className="btn btn-link">Learn more</Link>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -151,7 +152,7 @@ const Marketing = () => {
                                             <Card.Text>
                                                 Engage your audience with high-quality, engaging content crafted by our expert writers.
                                             </Card.Text>
-                                            <a href="/pages/accounting-services" className="btn btn-link">Learn more</a>
+                                            <Link to="accounting-services" className="btn btn-link">Learn more</Link>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -165,7 +166,7 @@ const Marketing = () => {
                                             <Card.Text>
                                                 Maximize your ROI with our effective pay-per-click advertising strategies.
                                             </Card.Text>
-                                            <a href="/pages/printing-services" className="btn btn-link">Learn more</a>
+                                            <Link to="printing-services" className="btn btn-link">Learn more</Link>
                                         </Card.Body>
                                     </Card>
                                 </Col>
