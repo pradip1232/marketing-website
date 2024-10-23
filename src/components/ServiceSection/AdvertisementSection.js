@@ -20,7 +20,7 @@ const AdvertisementSection = () => {
 
             <Container fluid className="advertisement-section mb-5">
                 <Row>
-                    <Col xs={5} className="text-center mb-5">
+                    <Col xs={12} md={6} className="text-center mb-5">
                         <h2 className='chosse-heading'>Choose from our wide options for advertisements across INDIA</h2>
                     </Col>
                 </Row>

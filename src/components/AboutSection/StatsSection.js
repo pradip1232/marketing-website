@@ -38,31 +38,32 @@ const StatsSection = () => {
 
             {/* Stats Section */}
             <Row className="stats-row">
-                <Col md={3} className="stat-box">
+                <Col xs={12} sm={6} md={3} className="stat-box">
                     <Box>
                         {inView && <CountUp end={80} duration={2} suffix="+" className="stat-number" />}
                         <Typography variant="h6">Clients</Typography>
                     </Box>
                 </Col>
-                <Col md={3} className="stat-box">
+                <Col xs={12} sm={6} md={3} className="stat-box">
                     <Box>
                         {inView && <CountUp end={25} duration={2} suffix="" className="stat-number" />}
                         <Typography variant="h6">Million+ Engagements</Typography>
                     </Box>
                 </Col>
-                <Col md={3} className="stat-box">
+                <Col xs={12} sm={6} md={3} className="stat-box">
                     <Box>
                         {inView && <CountUp end={300} duration={2} suffix="" className="stat-number" />}
                         <Typography variant="h6">Million+ Audience Reached</Typography>
                     </Box>
                 </Col>
-                <Col md={3} className="stat-box">
+                <Col xs={12} sm={6} md={3} className="stat-box">
                     <Box>
                         {inView && <CountUp end={100} duration={2} suffix="%" className="stat-number" />}
                         <Typography variant="h6">Guaranteed Result</Typography>
                     </Box>
                 </Col>
             </Row>
+
             <LookingWithContactBtn />
 
         </Container>

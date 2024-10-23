@@ -41,11 +41,11 @@ const InfoSection = () => {
         <Col md={7} className="content-section">
           <Box className="info-content">
             {infoData.map((item, index) => (
-              <Row key={index} className="info-item">
-                <Col md={2}>
+              <Row key={index} className="info-item pt-2">
+                <Col xs={2} md={2}>
                   <Box className="number-box mt-2">{item.number}</Box>
                 </Col>
-                <Col md={10}>
+                <Col md={10} xs={10} >
                   <Box className="text-content">
                     <Typography variant="h5" className="info-title">{item.title}</Typography>
                     <Typography variant="body1" className="info-description">

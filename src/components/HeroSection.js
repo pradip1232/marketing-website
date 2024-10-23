@@ -95,7 +95,8 @@ const steps = [
       {
         name: 'Select a Service',
         type: 'buttonGroup',
-        options: ['Digital Marketing Services',
+        options: [
+          'Digital Marketing Services',
           'Offline Marketing',
           'Graphic Designing',
           'Financial Services',
@@ -109,6 +110,7 @@ const steps = [
     label: 'Page Management Service Pricing',
     fields: [
       {
+        name: 'Page Management Service Pricing',
         type: 'buttonGroup',
         options: [
           { text: 'META (Fb & Instagram)', price: '₹2000' },
@@ -124,6 +126,7 @@ const steps = [
     label: 'Designing Service Pricing',
     fields: [
       {
+        name: 'Designing Service Pricing',
         type: 'buttonGroup',
         options: [
           { text: 'Up to 5 creatives', price: '₹1000' },
@@ -143,6 +146,7 @@ const steps = [
     label: ' Ad Management Service Pricing',
     fields: [
       {
+        name: 'Ad Management Service Pricing',
         type: 'buttonGroup',
         options: [
           { text: ' 10% of your ad budget (whichever is higher)', price: '₹5000' },
@@ -334,11 +338,18 @@ const HeroSection = () => {
 
 
 
+
+  // const apiUrl = process.env.REACT_APP_API_URL;
+  const apiUrl = 'https://squibfactory.com/apis';
+  console.log("API URL new ENV ddd: " + apiUrl);
+
   const handleSubmit = async () => {
     try {
       console.log('Submitting form data:', formData); // Check formData before submission.
 
-      const response = await fetch('http://localhost/squib/modal_form.php', {
+      // const response = await fetch('form_data.php', {
+      const response = await fetch(`${apiUrl}/modal_form.php`, {
+
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -534,7 +545,7 @@ const HeroSection = () => {
                 </Box>
               ))}
               <Box sx={{ mt: 2, display: 'flex', justifyContent: 'end' }}>
-                <Button className="nextbtn-modal"
+                <Button className="nextbtn-modal" style={{ border: '1px solid #00758B', color: 'black', background: 'white' }}
                   variant="contained"
                   onClick={activeStep === steps.length - 1 ? handleSubmit : handleNext}
                 >
@@ -663,7 +674,7 @@ const HeroSection = () => {
           }}>
           <div className="container" style={{ position: 'relative', zIndex: 1 }}>
             <div className="row justify-content-center">
-              <div className="col-md-7 text-center d-flex align-items-center justify-content-between"
+              <div className="col-md-7 text-center d-flex align-items-center justify-content-between schdule-call-caontainer"
                 style={{
                   border: '1px solid black',
                   backgroundColor: 'white',

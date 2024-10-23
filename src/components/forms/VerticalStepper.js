@@ -67,7 +67,8 @@ const steps = [
             {
                 name: 'Select a Service',
                 type: 'buttonGroup',
-                options: ['Digital Marketing Services',
+                options: [
+                    'Digital Marketing Services',
                     'Offline Marketing',
                     'Graphic Designing',
                     'Financial Services',
@@ -81,6 +82,7 @@ const steps = [
         label: 'Page Management Service Pricing',
         fields: [
             {
+                name: 'Page Management Service Pricing',
                 type: 'buttonGroup',
                 options: [
                     { text: 'META (Fb & Instagram)', price: '₹2000' },
@@ -96,6 +98,7 @@ const steps = [
         label: 'Designing Service Pricing',
         fields: [
             {
+                name: 'Designing Service Pricing',
                 type: 'buttonGroup',
                 options: [
                     { text: 'Up to 5 creatives', price: '₹1000' },
@@ -115,6 +118,7 @@ const steps = [
         label: ' Ad Management Service Pricing',
         fields: [
             {
+                name: 'Ad Management Service Pricing',
                 type: 'buttonGroup',
                 options: [
                     { text: ' 10% of your ad budget (whichever is higher)', price: '₹5000' },
@@ -124,7 +128,7 @@ const steps = [
             },
         ],
     },
-    // { label: 'Review & Submit' },
+    { label: 'Thank You' },
 ];
 
 // Styles
@@ -175,6 +179,7 @@ const VerticalStepper = () => {
 
     const handleButtonGroupChange = (name, value, price = '') => {
         // Update formData with both value and price.
+        const s = value.concat(" ", price);
         setFormData((prev) => ({
             ...prev,
             [name]: value, // Store service name
@@ -184,13 +189,13 @@ const VerticalStepper = () => {
         setSelectedService(value);
         setSelectedPrice(price);
 
-        console.log(`Selected Service: ${value}, Price: ${price}`); // Verify selected details.
+        console.log(`Selected Service: ${value}, Price: ${price} ,  name: ${name}`); // Verify selected details.
 
         // my code 
 
         if (name === 'Select a Service' && value !== 'Digital Marketing Services') {
             // Jump to the last step if any other service is selected
-            setActiveStep(steps.length - 1);
+            setActiveStep(steps.length - 1 );
         }
     };
 
@@ -226,10 +231,10 @@ const VerticalStepper = () => {
 
 
     const apiUrl = process.env.REACT_APP_API_URL;
-    console.log("API URL new ENV file: " + apiUrl+"/modal_form.php");
+    console.log("API URL new ENV file: " + apiUrl + "modal_form.php");
     console.log(process.env);
     console.log(process.env.REACT_APP_TEST_VAR);
-    
+
 
 
 

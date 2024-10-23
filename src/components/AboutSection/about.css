@@ -113,3 +113,52 @@ p.lead {
 button {
     font-size: 1.2rem;
 }
+
+
+@media (max-width:325px) {
+    .about-section-deigital {
+        padding: 1px 6px;
+    }
+
+    .about-section .etxt-colomn h2 {
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0.07em;
+        text-align: center;
+
+    }
+
+    .about-section .etxt-colomn p {
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18px;
+        letter-spacing: 0.07em;
+        text-align: center;
+
+    }
+
+
+    .about-section-2 .etxt-colomn h2 {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: center;
+
+    }
+
+    .about-section-2 .etxt-colomn p {
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        text-align: center;
+
+    }
+
+}

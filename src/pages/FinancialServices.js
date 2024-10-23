@@ -24,7 +24,7 @@ function FinancialServices() {
 
 
                 <Row className="align-items-center imgORtext">
-                    <Col lg={5} md={12} className="text-center">
+                    <Col xs={12} lg={5} className="text-center">
                         <div style={{ position: 'relative', display: 'inline-block' }}>
                             <img src={financialImage} alt="Financial Growth" className="img-fluid FinancialGrowthimg" />
                             <Button
@@ -43,17 +43,17 @@ function FinancialServices() {
                         </div>
                     </Col>
 
-                    <Col lg={6} md={7} className='lack-text'>
-                        {/* <h5 className="services-title">Financial Services</h5> */}
+                    <Col xs={12} lg={6} className='lack-text text-center text-lg-start'>
                         <h2 className="services-heading">Lack Of Money Is The Root Of All Evil</h2>
                         <p className="services-subtext">and we focus on keeping you free from evil!</p>
-                        <hr className='' style={{ width: '299px', border: '1px solid #000000' }} />
+                        <hr className='' style={{ width: '299px', border: '1px solid #000000', margin: '0 auto 20px' }} />
                         <h4 className="services-subheading">We help you grow !!</h4>
                         <p className="services-description">
                             Our focus is to help your business in expansion, and we offer a wide array of services related to the same objective. It includes providing assistance in obtaining funds inflow for expansion and growth.
                         </p>
                     </Col>
                 </Row>
+
             </Container>
 
             <LookingWithContactBtn />

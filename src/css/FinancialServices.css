@@ -81,6 +81,7 @@
   text-align: left;
   color: #00758B;
 }
+
 .services-subheading2 {
   font-family: Poppins;
   font-size: 24px;
@@ -184,3 +185,89 @@
   /* Adjust this to give space for the vertical line */
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:325px) {
+
+  .financial-section .fin-main-heading {
+    width: auto;
+    height: auto;
+    background: #00758B;
+    border: 1px solid #00758B;
+    border-radius: 25px;
+  }
+
+
+
+  .services-title {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+
+
+  .FinancialGrowthimg {
+    width: 309px;
+    height: 448px;
+  }
+
+  .get-started-button {
+    position: absolute;
+    bottom: -23px !important;
+    right: 11px !important;
+    height: 54px;
+    width: 272px;
+
+  }
+
+
+  .lack-text {
+    margin-top: 4rem;
+  }
+
+  .services-heading {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+  }
+
+  .services-description {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+  }
+
+  .our-services {
+    font-family: Poppins;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 24px !important;
+    letter-spacing: 0.07em !important;
+    text-align: center;
+    color: #00758B !important;
+  }
+}

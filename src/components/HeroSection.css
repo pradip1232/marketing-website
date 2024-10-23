@@ -121,8 +121,6 @@
   background-color: #019f93;
 }
 
-
-
 .nextbtn-modal {
 
   border: 1px solid #00758B !important;
@@ -131,12 +129,9 @@
   border-radius: 7px !important;
   width: 88px !important;
   height: 40px !important;
-  /* top: 472px; */
-  /* left: 568px; */
   gap: 0px;
   border-radius: 7px !important;
   border: 1px 0px 0px 0px !important;
-  opacity: 0px !important;
   font-family: Poppins !important;
   font-size: 18px !important;
   font-weight: 400 !important;
@@ -144,6 +139,9 @@
   text-align: center !important;
 
 }
+
+
+
 
 @media (max-width: 1200px) {
   .hero-content h2 {
@@ -1225,5 +1223,50 @@ left: -8px; */
     /* Ensure image adjusts properly for mobile */
     width: 100%;
     /* Ensure image takes full width of the card */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .schdule-call-caontainer a {
+    font-family: Poppins;
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    line-height: 15px !important;
+    letter-spacing: 0.02em;
+    text-align: center;
+    width: 135px !important;
+    height: 20px !important;
+    /* top: 3419px;
+    left: 93px; */
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    /* opacity: 0px; */
+
+
+  }
+
+  .schdule-call-caontainer h2 {
+    font-family: Poppins;
+    font-size: 10px !important;
+    font-weight: 500 !important;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+  }
+
+  .schdule-call-caontainer {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 250px;
   }
 }
