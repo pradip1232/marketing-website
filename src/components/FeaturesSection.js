@@ -11,7 +11,7 @@ const FeaturesSection = () => {
   return (
     <section className="features-section acount-heading">
       <Container>
-        
+
         {/* First Feature (Right Side Image) */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -19,7 +19,7 @@ const FeaturesSection = () => {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.5 }}
         >
-          <Row className="align-items-right text-right justify-content-end feature">
+          <Row className="align-items-right text-right accountability-right-home justify-content-end feature">
             <Col md={6} className='text-right height-width-home'>
               <h4>Accountability</h4>
               <p>
@@ -64,7 +64,7 @@ const FeaturesSection = () => {
           transition={{ duration: 0.7, delay: 0.4, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.5 }}
         >
-          <Row className="align-items-right text-right justify-content-end feature mt-5 pt-5">
+          <Row className="align-items-right text-right accountability-right-home justify-content-end feature mt-5 pt-5">
             <Col md={6} className='text-right'>
               <h4>One-Stop Service Provider</h4>
               <p>

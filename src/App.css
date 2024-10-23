@@ -51,3 +51,17 @@ h6 {
 .contact-btn {
   margin-top: -50px;
 }
+
+
+
+@media (max-width: 325px) {
+  .financial-heading {
+    font-family: Poppins !important;
+    font-size: 24px !important;
+    font-weight: 900 !important;
+    line-height: 36px !important;
+    letter-spacing: 0.07em !important;
+    text-align: center;
+
+  }
+}

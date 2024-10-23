@@ -13,7 +13,7 @@ const AccoutingServices = () => {
         <>
             <Container className="hr-services mb-5">
                 <Row>
-                    <Col xs={12} className='' style={{
+                    <Col  lg={12} md={6} sm={3} className='' style={{
                         height: '57px',
                         width: '475px',
                         background: 'rgba(0, 117, 139, 1)',

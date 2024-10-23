@@ -109,8 +109,8 @@
 }
 
 .let-contact-btn {
-  margin-top: -23px!important;
-  margin-left: 57px!important;
+  margin-top: -23px !important;
+  margin-left: 57px !important;
 }
 
 .home-text-col {
@@ -119,6 +119,30 @@
 
 .contact-btn:hover {
   background-color: #019f93;
+}
+
+
+
+.nextbtn-modal {
+
+  border: 1px solid #00758B !important;
+  color: black !important;
+  background-color: white !important;
+  border-radius: 7px !important;
+  width: 88px !important;
+  height: 40px !important;
+  /* top: 472px; */
+  /* left: 568px; */
+  gap: 0px;
+  border-radius: 7px !important;
+  border: 1px 0px 0px 0px !important;
+  opacity: 0px !important;
+  font-family: Poppins !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 27px !important;
+  text-align: center !important;
+
 }
 
 @media (max-width: 1200px) {
@@ -238,7 +262,7 @@
 
 
 .text-heading-servics p {
-  font-family: 'Poppins', 'Arial', sans-serif;
+  font-family: 'Poppins';
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -633,4 +657,573 @@ p {
   letter-spacing: 0.02em;
   /* text-align: right; */
   color: rgba(0, 117, 139, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responive code to for all devices  */
+
+
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 15px;
+    /* Reduce padding for mobile */
+  }
+
+  .hero-section-row {
+    margin-top: 66px;
+  }
+
+
+  .let-contact-btn {
+    margin-left: 0px !important;
+  }
+
+  .contact-btn {
+    width: 210px !important;
+    height: 43px !important;
+
+    gap: 0px;
+    border-radius: 7px 0px 0px 0px;
+    opacity: 0px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+
+  }
+
+  .home-text-col {
+    text-align: center;
+    /* Center align text on mobile */
+    margin-bottom: 20px;
+    /* Add margin below */
+  }
+
+  .hero-content h2 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+    text-align: center;
+
+  }
+
+  .hero-content h1 {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.07em;
+    text-align: center;
+
+  }
+
+  .hero-content p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.07em;
+    text-align: center;
+
+  }
+
+  .man-image {
+    max-width: 250px;
+    height: 313px;
+    width: 250px;
+    margin-top: 0px;
+    margin-bottom: 9px;
+  }
+
+  .learn-more-btn {
+    margin-top: 1px !important;
+  }
+
+  .contact-btn {
+    margin-top: 15px;
+    /* Spacing for button */
+  }
+}
+
+
+.client-testimonial-heading {
+  font-family: Poppins !important;
+  font-size: 30px !important;
+  font-weight: 600 !important;
+  line-height: 45px !important;
+  letter-spacing: 0.02em !important;
+  text-align: left;
+
+}
+
+.test-home-dont {
+  font-family: Poppins !important;
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  line-height: 37.5px !important;
+  letter-spacing: 0.02em !important;
+  text-align: left;
+
+}
+
+.test-content-para {
+  font-family: Poppins !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 27px !important;
+  letter-spacing: 0.02em !important;
+  text-align: left;
+
+}
+
+.testimonial-name {
+  font-family: Poppins !important;
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  line-height: 37.5px !important;
+  letter-spacing: 0.02em !important;
+  /* text-align: left; */
+
+}
+
+.testinomoal-place {
+  font-family: Poppins !important;
+  font-size: 22px !important;
+  font-weight: 300 !important;
+  line-height: 33px !important;
+  letter-spacing: 0.02em !important;
+  /* text-align: left; */
+
+}
+
+@media (max-width: 325px) {
+
+  .features-section {
+    padding: 0px 0px;
+  }
+
+  .testimonial-name {
+    font-family: Poppins !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 24px !important;
+    letter-spacing: 0.02em !important;
+    text-align: left;
+
+  }
+
+
+  .testinomoal-place {
+    font-family: Poppins !important;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    line-height: 18px !important;
+    letter-spacing: 0.02em !important;
+    text-align: left;
+
+  }
+
+  .test-home-dont {
+    font-family: Poppins;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 18px !important;
+    letter-spacing: 0.02em !important;
+    text-align: center;
+  }
+
+  .client-testimonial-heading {
+    font-family: Poppins;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 45px !important;
+    letter-spacing: 0.02em !important;
+    text-align: center;
+
+  }
+
+  .test-content-para {
+    font-family: Poppins !important;
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    line-height: 15px !important;
+    letter-spacing: 0.02em !important;
+    text-align: justified;
+  }
+
+  .navbar-brand {
+    padding: 0;
+  }
+
+  .logo {
+    width: 100px;
+    height: 50px;
+  }
+
+  .slogo {
+    width: 100px;
+    height: 50px;
+  }
+
+
+
+
+  .right-side-about-heading h3 {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+  }
+
+  .right-side-about-heading h4 {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+  }
+
+  .right-side-about-heading p {
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    text-align: justified;
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+  }
+
+
+
+
+
+  .acount-heading h4 {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+  }
+
+  .happy-subheading {
+    font-family: Poppins;
+    font-size: 16px !important;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.07em;
+    text-align: center;
+    margin-top: 10px;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* 
+
+  .contact-worlds-images {
+    max-width: 250px;
+    height: auto;
+  } */
+}
+
+
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .diagonal-card-section {
+    padding: 1px;
+    /* Reduce padding for mobile */
+  }
+
+  .text-heading-servics h2 {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+  }
+
+  .text-heading-servics h3 {
+    font-size: 1rem;
+    /* Smaller subtitle for mobile */
+  }
+
+  .text-heading-servics p {
+    font-size: 0.8rem;
+    /* Smaller paragraph for mobile */
+  }
+
+  .cards-img-mmarketing {
+    width: 100%;
+    /* Make images responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+
+  .btn-link {
+    font-size: 0.9rem;
+    /* Adjust button text size */
+  }
+
+  .diagonal-layout {
+    flex-direction: column;
+    /* Stack cards vertically on mobile */
+  }
+
+
+
+  .diagonal-layout .card-1 {
+    position: relative;
+    top: 20px;
+
+    /* Lower this card */
+  }
+
+  .diagonal-layout .card-2 {
+    position: relative;
+    top: 15px;
+    bottom: 20px;
+    /* Keep this in the middle */
+  }
+
+  .diagonal-layout .card-3 {
+    position: relative;
+    top: 2px;
+    /* Raise this card */
+  }
+
+  /* .card-1,
+  .card-2,
+  .card-3 {
+    margin-bottom: 20px;
+  } */
+
+  .text-heading-servics p {
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+  }
+
+  .text-heading-servics h3 {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    text-align: center;
+    align-items: center;
+  }
+
+  .our-services-text-home {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .girl-image {
+    width: 331px;
+    height: 340px;
+    /* top: 1772px;
+left: -8px; */
+    gap: 0px;
+    opacity: 0px;
+
+  }
+
+  .row-girls-sections {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .right-side-about-heading {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .accountability-right-home {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .acount-heading p {
+    width: auto;
+    height: auto;
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+  }
+
+  .happy-heading {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 36px;
+    letter-spacing: 0.07em;
+    text-align: center;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For Mobile View */
+@media (max-width: 576px) {
+  .carousel .carousel-item {
+    width: 100%;
+    /* Make sure each carousel item takes full width on mobile */
+    padding: 0 10px;
+    /* Adjust internal padding */
+  }
+
+  .custom-card-marketing {
+    width: 100%;
+    /* Ensure the card takes the full width of the carousel on mobile */
+    margin-right: 0;
+    /* Remove any right margin to avoid overflow */
+  }
+
+  .cards-img-mmarketing {
+    height: auto;
+    /* Ensure images scale properly */
+    width: 100%;
+    /* Ensure the image fits the card */
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  .diagonal-card-section {
+    padding: 0 10px;
+    /* Adjust padding for mobile */
+  }
+
+  .diagonal-layout {
+    overflow-x: hidden;
+    /* Prevent horizontal overflow */
+  }
+
+  .carousel .carousel-item {
+    padding: 0 10px;
+    /* Adjust internal padding to control spacing */
+  }
+
+  .custom-card-marketing {
+    width: 100%;
+    /* Make each card take full width */
+    margin-right: 0;
+    /* Remove the right margin */
+  }
+
+  .carousel-inner {
+    overflow: hidden;
+    /* Ensure no extra space is added on right side */
+  }
+
+  .carousel-item {
+    width: 100%;
+    /* Ensure the carousel items take the full width of the screen */
+  }
+
+  .cards-img-mmarketing {
+    height: auto !important;
+    /* Ensure image adjusts properly for mobile */
+    width: 100%;
+    /* Ensure image takes full width of the card */
+  }
 }

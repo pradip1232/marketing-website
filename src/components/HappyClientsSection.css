@@ -22,6 +22,36 @@
   margin-bottom: -20px;
 }
 
+
+@media (max-width:325px) {
+  .happy-heading {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 36px;
+    letter-spacing: 0.07em;
+    text-align: center;
+
+  }
+
+
+  .hppy-clint-cont p {
+    font-family: Poppins;
+    font-size: 12px!important;
+    font-weight: 400!important;
+    line-height: 18px!important;
+    letter-spacing: 0.02em!important;
+    text-align: center;
+
+  }
+
+  .client-card img {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
 .hppy-clint-cont p {
   font-family: Poppins;
   font-size: 25px;

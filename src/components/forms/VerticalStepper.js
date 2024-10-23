@@ -14,9 +14,20 @@ import {
     Snackbar,
     Alert,
     TextField,
+    // Row,
+    // Col,
 } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import Slide from '@mui/material/Slide';
+
+
+
+
+// import { useState } from 'react';
+// import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import { Row, Col } from 'react-bootstrap';
+
 
 // Snackbar Transition Animation
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -45,7 +56,7 @@ const steps = [
             {
                 name: 'Turnover Last Year',
                 type: 'buttonGroup',
-                options: ['0 - 49,999', '50,000 - 199,999', '500,000 - 999,999', '1,000,000+'],
+                options: ['0 - 49,99,999', '50,00,000 - 1,99,99,999', ' 2,00,00,000 - 4,99,99,999', '5,00,00,000 - 9,99,99,999', '10,00,00,000+'],
             },
             { name: 'Established Year', type: 'text' },
         ],
@@ -56,7 +67,13 @@ const steps = [
             {
                 name: 'Select a Service',
                 type: 'buttonGroup',
-                options: ['Digital Marketing Services', 'HR Services', 'Legal Services', 'Web Development'],
+                options: ['Digital Marketing Services',
+                    'Offline Marketing',
+                    'Graphic Designing',
+                    'Financial Services',
+                    'Printing Services',
+                    'Accounting Services',
+                    'HR Services', 'Legal Services', 'Web Development'],
             },
         ],
     },
@@ -107,24 +124,28 @@ const steps = [
             },
         ],
     },
-    { label: 'Review & Submit' },
+    // { label: 'Review & Submit' },
 ];
 
 // Styles
 const useStyles = makeStyles(() => ({
     selectedButton: {
-        backgroundColor: '#1976d2 !important',
+        backgroundColor: '#00758B!important',
         color: 'white !important',
+        borderRadius: '0px!important',
         '&:hover': {
             backgroundColor: '#115293',
         },
     },
     normalButton: {
-        backgroundColor: 'white',
-        color: '#1976d2',
-        border: '1px solid #1976d2',
+        // fontSize: '10px!important',
+
+        backgroundColor: '#F2F2F2!important',
+        color: 'black!important',
+        borderRadius: '0px!important',
+        // border: '1px solid #1976d2!important',
         '&:hover': {
-            backgroundColor: '#e3f2fd',
+            backgroundColor: '#F2F2F2!important',
         },
     },
 }));
@@ -136,6 +157,8 @@ const VerticalStepper = () => {
     const [errors, setErrors] = useState({});
     const [openDialog, setOpenDialog] = useState(false);
     const [showSnackbar, setShowSnackbar] = useState(false);
+    const [snackbarMessage, setSnackbarMessage] = useState('');
+
     const [selectedService, setSelectedService] = useState('');
 
     const validateField = (name, value, pattern) => {
@@ -150,9 +173,20 @@ const VerticalStepper = () => {
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
-    const handleButtonGroupChange = (name, value) => {
-        setFormData((prev) => ({ ...prev, [name]: value }));
+    const handleButtonGroupChange = (name, value, price = '') => {
+        // Update formData with both value and price.
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value, // Store service name
+            [`${name}_price`]: price, // Store corresponding price
+        }));
+
         setSelectedService(value);
+        setSelectedPrice(price);
+
+        console.log(`Selected Service: ${value}, Price: ${price}`); // Verify selected details.
+
+        // my code 
 
         if (name === 'Select a Service' && value !== 'Digital Marketing Services') {
             // Jump to the last step if any other service is selected
@@ -187,7 +221,65 @@ const VerticalStepper = () => {
         setErrors({});
     };
 
-    const handleSubmit = () => setOpenDialog(true);
+    // const handleSubmit = () => setOpenDialog(true);
+
+
+
+    const apiUrl = process.env.REACT_APP_API_URL;
+    console.log("API URL new ENV file: " + apiUrl+"/modal_form.php");
+    console.log(process.env);
+    console.log(process.env.REACT_APP_TEST_VAR);
+    
+
+
+
+
+    const handleSubmit = async () => {
+        try {
+            console.log('Submitting form data:', formData); // Check formData before submission.
+
+            // const response = await fetch('http://localhost/squib/modal_form.php', {
+            const response = await fetch(`${apiUrl}/modal_form.php`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            console.log('Response status:', response.status);
+
+            if (response.ok) {
+                setSnackbarMessage('Form submitted successfully!');
+                setShowSnackbar(true);
+                handleReset();
+            } else {
+                const errorData = await response.json();
+                setSnackbarMessage(`Error: ${errorData.message || 'Submission failed'}`);
+                setShowSnackbar(true);
+            }
+        } catch (error) {
+            setSnackbarMessage(`Error: ${error.message}`);
+            setShowSnackbar(true);
+        }
+    };
+
+
+
+
+
+
+    // const [selectedService, setSelectedService] = useState('');
+    const [selectedPrice, setSelectedPrice] = useState(''); // Store selected price
+
+
+
+
+
+
+
+
+
+
+
 
     const handleCloseDialog = () => {
         setOpenDialog(false);
@@ -197,75 +289,124 @@ const VerticalStepper = () => {
 
     const handleCloseSnackbar = () => setShowSnackbar(false);
 
+
+    const [smShow, setSmShow] = useState(false);
+    const [lgShow, setLgShow] = useState(false);
+
+
     return (
         <>
-            <div
-                className='mainContainer'
-                style={{ display: 'flex', maxWidth: '800px', margin: '10rem auto', padding: '20px' }}
-            >
-                <div className='verticalStepperContainer' style={{ width: '40px', marginRight: '20px', flexShrink: 0 }}>
-                    <Stepper activeStep={activeStep} orientation="vertical" nonLinear>
-                        {steps.map((step, index) => (
-                            <Step key={step.label} completed={index < activeStep}>
-                                <StepLabel>{index.label}</StepLabel>
-                            </Step>
-                        ))}
-                    </Stepper>
-                </div>
-                <div className='contentContainer' style={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-                    {steps[activeStep]?.fields?.map((field) => (
-                        <Box key={field.name} sx={{ mb: 2 }}>
-                            {field.type === 'text' ? (
-                                <TextField
-                                    label={field.name}
-                                    fullWidth
-                                    variant="outlined"
-                                    error={!!errors[field.name]}
-                                    helperText={errors[field.name]}
-                                    onChange={(e) => handleInputChange(field.name, e.target.value, field.pattern)}
-                                />
-                            ) : field.type === 'buttonGroup' ? (
-                                <Box>
-                                    <Typography variant="subtitle1" sx={{ mb: 1 }}>
-                                        {field.name}
-                                    </Typography>
-                                    {field.options.map((option) => (
-                                        <Button
-                                            key={typeof option === 'string' ? option : option.text}
-                                            onClick={() =>
-                                                handleButtonGroupChange(
-                                                    field.name,
-                                                    typeof option === 'string' ? option : option.text
-                                                )
-                                            }
-                                            className={
-                                                formData[field.name] === (typeof option === 'string' ? option : option.text)
-                                                    ? classes.selectedButton
-                                                    : classes.normalButton
-                                            }
-                                            sx={{ mr: 1, mb: 1 }}
-                                        >
-                                            {typeof option === 'string' ? option : `${option.text} ${option.price}`}
-                                        </Button>
-                                    ))}
-                                </Box>
-                            ) : null}
-                        </Box>
-                    ))}
 
-                    <Box sx={{ mt: 2, display: 'flex', justifyContent: 'space-between' }}>
-                        <Button
-                            variant="contained"
-                            onClick={activeStep === steps.length - 1 ? handleSubmit : handleNext}
-                        >
-                            {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
-                        </Button>
-                        <Button disabled={activeStep === 0} onClick={handleBack}>
-                            Back
-                        </Button>
-                    </Box>
-                </div>
-            </div>
+            <Button onClick={() => setLgShow(true)} style={{ margin: '15rem' }}>Large modal</Button>
+            <Modal
+                size="lg"
+                show={lgShow}
+                onHide={() => setLgShow(false)}
+                aria-labelledby="example-modal-sizes-title-lg"
+            >
+                <Modal.Body>
+                    <div
+                        className='mainContainer'
+                        style={{ display: 'flex', maxWidth: 'auto', padding: '20px' }}
+                    >
+                        <div className='verticalStepperContainer' style={{ width: '40px', marginRight: '20px', flexShrink: 0 }}>
+                            <Stepper activeStep={activeStep} orientation="vertical" nonLinear>
+                                {steps.map((step, index) => (
+                                    <Step key={step.label} completed={index < activeStep}>
+                                        <StepLabel>{index.label}</StepLabel>
+                                    </Step>
+                                ))}
+                            </Stepper>
+                        </div>
+                        <div className='contentContainer' style={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+                            <Typography variant="h4" component="h2" align="left" color="black" sx={{ mb: 3 }}>
+                                {steps[activeStep].label}
+                            </Typography>
+                            {steps[activeStep]?.fields?.map((field) => (
+                                <Box key={field.name} sx={{ mb: 2 }}>
+                                    {field.type === 'text' ? (
+                                        <TextField
+                                            label={field.name}
+                                            fullWidth
+                                            variant="outlined"
+                                            error={!!errors[field.name]}
+                                            helperText={errors[field.name]}
+                                            onChange={(e) => handleInputChange(field.name, e.target.value, field.pattern)}
+                                        />
+                                    ) : field.type === 'buttonGroup' ? (
+                                        <Box>
+                                            <Typography variant="subtitle1" sx={{ mb: 1 }}>
+                                                {field.name}
+                                            </Typography>
+                                            {activeStep === 1 ? ( // Only step 2 uses row layout
+                                                <Row>
+                                                    {field.options.map((option) => (
+                                                        <Col key={option} sm={4} md={3}>
+
+                                                            <Button
+                                                                onClick={() => handleButtonGroupChange(field.name, option)}
+                                                                className={
+                                                                    formData[field.name] === option
+                                                                        ? classes.selectedButton
+                                                                        : classes.normalButton
+                                                                }
+                                                                sx={{ mr: 1, mb: 1 }}
+                                                            >
+                                                                {option}
+                                                            </Button>
+                                                        </Col>
+                                                    ))}
+                                                </Row>
+                                            ) : (
+                                                <Box display="flex" flexDirection="column">
+                                                    {field.options.map((option) => (
+                                                        <Row>
+                                                            <Col sm={12} md={6}>
+
+                                                                <Button
+                                                                    key={typeof option === 'string' ? option : option.text}
+                                                                    onClick={() =>
+                                                                        handleButtonGroupChange(
+                                                                            field.name,
+                                                                            typeof option === 'string' ? option : option.text, option.price
+                                                                        )
+                                                                    }
+                                                                    className={
+                                                                        formData[field.name] === (typeof option === 'string' ? option : option.text)
+                                                                            ? classes.selectedButton
+                                                                            : classes.normalButton
+                                                                    }
+                                                                    sx={{ mb: 1 }}
+                                                                >
+                                                                    {typeof option === 'string' ? option : `${option.text} ${option.price}`}
+                                                                </Button>
+                                                            </Col>
+                                                        </Row>
+                                                    ))}
+                                                </Box>
+                                            )}
+                                        </Box>
+                                    ) : null}
+                                </Box>
+                            ))}
+                            <Box sx={{ mt: 2, display: 'flex', justifyContent: 'end' }}>
+                                <Button
+                                    variant="contained"
+                                    onClick={activeStep === steps.length - 1 ? handleSubmit : handleNext}
+                                >
+                                    {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                                </Button>
+                            </Box>
+                        </div>
+                    </div>
+                </Modal.Body>
+            </Modal>
+
+
+
+
+
+
 
             <Dialog open={openDialog} onClose={handleCloseDialog}>
                 <DialogTitle>Form Data</DialogTitle>

@@ -16,8 +16,8 @@ const Contact = () => {
             <img
               src={callimg}
               alt="Contact Us Icon"
-              className="img-fluid" // Makes the image responsive
-              style={{ maxWidth: '470px', height: 'auto' }} // Limits the image size
+              className="img-fluid contact-worlds-images" // Makes the image responsive
+              // style={{ maxWidth: '470px', height: 'auto' }} // Limits the image size
             />
           </div>
         </div>
@@ -83,7 +83,7 @@ const Contact = () => {
               <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                 <FaInstagram size={43} className="mx-2 text-danger" aria-label="Instagram" />
               </a>
-          
+
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin size={43} className="mx-2 text-primary" aria-label="LinkedIn" />
               </a>
@@ -165,33 +165,13 @@ const Contact = () => {
           </Col>
           <Col md={6} className="text-center">
             <Box
-              style={{
-                boxShadow: '0px 4px 4px 0px #00000040',
-                background: '#FFFFFF',
-                border: '1px solid #00000040',
-                width: '392px',
-                height: '568px',
-                borderRadius: '13px',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                opacity: 1,
-                margin: '0 auto' // Center the Box
-              }}
+               className="contact-man-box"
             >
               <img
                 src={man}
                 alt="Person pointing"
                 className="img-fluid"
-                style={{
-                  marginTop: '-53px',
-                  maxWidth: '100%',
-                  height: 'auto',
-                  width: '438px',
-                  height: '619px',
-                  opacity: 1
-
-                }}
+             
               />
             </Box>
           </Col>

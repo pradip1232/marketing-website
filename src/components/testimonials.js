@@ -30,13 +30,11 @@ const TestimonialSection = () => {
         marginTop={10}
         gutterBottom
         sx={{
-          fontFamily: 'Poppins, sans-serif',
-          fontSize: '30px',
-          fontWeight: 600,
-          lineHeight: '45px',
-          letterSpacing: '0.02em',
+
           color: 'rgba(0, 117, 139, 1)',
         }}
+
+        className='client-testimonial-heading'
       >
         Client Testimonial
       </Typography>
@@ -44,12 +42,13 @@ const TestimonialSection = () => {
         variant="subtitle1"
         sx={{
           mb: 4,
-          fontFamily: 'Poppins, sans-serif',
-          fontSize: '25px',
-          fontWeight: 500,
-          lineHeight: '37.5px',
-          letterSpacing: '0.02em',
+          // fontFamily: 'Poppins, sans-serif',
+          // fontSize: '25px',
+          // fontWeight: 500,
+          // lineHeight: '37.5px',
+          // letterSpacing: '0.02em',
         }}
+        className='test-home-dont'
       >
         Don’t take our word for it – here’s what our clients say:
       </Typography>
@@ -90,14 +89,10 @@ const TestimonialSection = () => {
                     color="textSecondary"
                     sx={{
                       mb: 3,
-                      fontFamily: 'Poppins, sans-serif',
-                      fontSize: '18px',
-                      fontWeight: 400,
-                      color: 'rgba(0, 0, 0, 1)',
-                      lineHeight: '27.5px',
-                      letterSpacing: '2%',
+                     
                       flexGrow: 1,
                     }}
+                    className='test-content-para'
                   >
                     {testimonial.quote}
                   </Typography>
@@ -106,13 +101,14 @@ const TestimonialSection = () => {
                       variant="h6"
                       component="p"
                       sx={{
-                        fontWeight: '500',
+                        // fontWeight: '500',
                         color: 'rgba(0, 117, 139, 1)',
-                        fontFamily: 'Poppins, sans-serif',
-                        fontSize: '25px',
-                        lineHeight: '37.5px',
-                        letterSpacing: '0.02em',
+                        // fontFamily: 'Poppins, sans-serif',
+                        // fontSize: '25px',
+                        // lineHeight: '37.5px',
+                        // letterSpacing: '0.02em',
                       }}
+                      className='testimonial-name'
                     >
                       {testimonial.name}
                     </Typography>
@@ -120,12 +116,13 @@ const TestimonialSection = () => {
                       variant="body2"
                       color="textSecondary"
                       sx={{
-                        fontFamily: 'Poppins, sans-serif',
-                        fontSize: '22px',
-                        fontWeight: 300,
-                        lineHeight: '33px',
-                        letterSpacing: '0.02em',
+                        // fontFamily: 'Poppins, sans-serif',
+                        // fontSize: '22px',
+                        // fontWeight: 300,
+                        // lineHeight: '33px',
+                        // letterSpacing: '0.02em',
                       }}
+                      className='testinomoal-place'
                     >
                       {testimonial.company}
                     </Typography>
